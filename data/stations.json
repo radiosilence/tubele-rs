@@ -1,0 +1,5656 @@
+[
+ {
+  "id": "abbey-road",
+  "name": "Abbey Road",
+  "lat": 51.53193,
+  "lon": 0.00374,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "It is nowhere near the Beatles' Abbey Road in Westminster, so signs at the station redirect confused tourists who get off here."
+ },
+ {
+  "id": "abbey-wood",
+  "name": "Abbey Wood",
+  "lat": 51.49124,
+  "lon": 0.12137,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "In the 1860s William Morris regularly travelled from here to his home, the Red House in Bexleyheath, often bringing Arts and Crafts guests."
+ },
+ {
+  "id": "acton-central",
+  "name": "Acton Central",
+  "lat": 51.50872,
+  "lon": -0.26297,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "mildmay"
+  ],
+  "fact": "Trains change power source here, swapping from overhead wires at 25,000 volts to a third rail carrying 750 volts."
+ },
+ {
+  "id": "acton-main-line",
+  "name": "Acton Main Line",
+  "lat": 51.51718,
+  "lon": -0.26676,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "It served a garden estate built by the Great Western Railway in the 1920s to house its own staff, mostly drivers from Old Oak Common depot."
+ },
+ {
+  "id": "acton-town",
+  "name": "Acton Town",
+  "lat": 51.50306,
+  "lon": -0.28046,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "district",
+   "piccadilly"
+  ],
+  "fact": "It was called Mill Hill Park until 1910, and its Grade II listed building is Charles Holden's brick, concrete and glass design of 1932."
+ },
+ {
+  "id": "aldgate",
+  "name": "Aldgate",
+  "lat": 51.51425,
+  "lon": -0.07569,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "circle",
+   "metropolitan"
+  ],
+  "fact": "The station sits on a plague pit behind St Botolph's church thought to hold around 1,000 bodies."
+ },
+ {
+  "id": "aldgate-east",
+  "name": "Aldgate East",
+  "lat": 51.51504,
+  "lon": -0.07238,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "district",
+   "hammersmith-city"
+  ],
+  "fact": "In 1938 the whole station was shifted east and 1,400 feet of track lowered, with the line staying open for most of the work."
+ },
+ {
+  "id": "all-saints",
+  "name": "All Saints",
+  "lat": 51.511,
+  "lon": -0.01314,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "It takes its name from the parish church of All Saints, built in the 1820s, and announcements add \"for Chrisp Street Market\"."
+ },
+ {
+  "id": "alperton",
+  "name": "Alperton",
+  "lat": 51.54063,
+  "lon": -0.29961,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "It opened in 1903 under the name Perivale-Alperton, and was rebuilt in the 1930s to a Charles Holden design."
+ },
+ {
+  "id": "amersham",
+  "name": "Amersham",
+  "lat": 51.67413,
+  "lon": -0.60771,
+  "zones": [
+   9
+  ],
+  "lines": [
+   "metropolitan"
+  ],
+  "fact": "At 147 metres above sea level it is the highest station on the Underground, standing taller than the Big Ben tower."
+ },
+ {
+  "id": "anerley",
+  "name": "Anerley",
+  "lat": 51.41215,
+  "lon": -0.06589,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "windrush"
+  ],
+  "fact": "The name is said to come from a Scottish landowner calling his home the \"annerly hoose\", the only house in what was then open country."
+ },
+ {
+  "id": "angel",
+  "name": "Angel",
+  "lat": 51.53262,
+  "lon": -0.1059,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "Its escalators rise 27 metres over a length of 61 metres, the longest on the Underground and in the United Kingdom."
+ },
+ {
+  "id": "archway",
+  "name": "Archway",
+  "lat": 51.56548,
+  "lon": -0.13482,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "It opened in 1907 as Highgate, and only took the name Archway for good in 1947 once a new Highgate station had been built up the hill."
+ },
+ {
+  "id": "arnos-grove",
+  "name": "Arnos Grove",
+  "lat": 51.61645,
+  "lon": -0.13306,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "Charles Holden's drum-shaped ticket hall is Grade II* listed and was said to be inspired by Stockholm City Library."
+ },
+ {
+  "id": "arsenal",
+  "name": "Arsenal",
+  "lat": 51.55866,
+  "lon": -0.10746,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "It is the only tube station named directly after a football club, renamed from Gillespie Road in 1932 after lobbying by manager Herbert Chapman."
+ },
+ {
+  "id": "baker-street",
+  "name": "Baker Street",
+  "lat": 51.52288,
+  "lon": -0.15713,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "bakerloo",
+   "circle",
+   "hammersmith-city",
+   "jubilee",
+   "metropolitan"
+  ],
+  "fact": "With ten platforms it has more than any other Underground station, and two of them survive from the line's opening in 1863."
+ },
+ {
+  "id": "balham",
+  "name": "Balham",
+  "lat": 51.44329,
+  "lon": -0.153,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "A bomb fell on the road above the platform tunnels on 14 October 1940, killing sixty-six people sheltering below."
+ },
+ {
+  "id": "bank",
+  "name": "Bank",
+  "lat": 51.51313,
+  "lon": -0.09005,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "central",
+   "dlr",
+   "northern",
+   "waterloo-city"
+  ],
+  "fact": "The Bank and Monument complex has 31 escalators and four moving walkways, more than any other station on the Underground."
+ },
+ {
+  "id": "barbican",
+  "name": "Barbican",
+  "lat": 51.52027,
+  "lon": -0.09799,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "circle",
+   "hammersmith-city",
+   "metropolitan"
+  ],
+  "fact": "It stands on the site of a house in Aldersgate Street that for years carried a sign claiming \"This was Shakespeare's House\"."
+ },
+ {
+  "id": "barking",
+  "name": "Barking",
+  "lat": 51.53932,
+  "lon": 0.08105,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "district",
+   "hammersmith-city",
+   "suffragette"
+  ],
+  "fact": "Its 1961 concrete and glass booking hall, by British Railways architects led by John Ward, has been Grade II listed since 1995."
+ },
+ {
+  "id": "barking-riverside",
+  "name": "Barking Riverside",
+  "lat": 51.51953,
+  "lon": 0.11596,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "suffragette"
+  ],
+  "fact": "It opened in 2022 on the site of the old Barking Power Station, built because 10,800 planned homes could not go ahead without it."
+ },
+ {
+  "id": "barkingside",
+  "name": "Barkingside",
+  "lat": 51.58569,
+  "lon": 0.08858,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "The Grade II listed station has a cupola on its roof and a hammerbeam ceiling in the ticket hall, more country church than tube stop."
+ },
+ {
+  "id": "barons-court",
+  "name": "Barons Court",
+  "lat": 51.49031,
+  "lon": -0.21343,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "district",
+   "piccadilly"
+  ],
+  "fact": "Its wooden platform benches, with the station name spelled out on enamel panels along the back, are unique on the Underground."
+ },
+ {
+  "id": "battersea-power-station",
+  "name": "Battersea Power Station",
+  "lat": 51.47993,
+  "lon": -0.14214,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "It opened in September 2021, the first major extension of the Underground since the Jubilee line was extended in 1999."
+ },
+ {
+  "id": "bayswater",
+  "name": "Bayswater",
+  "lat": 51.51228,
+  "lon": -0.18794,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "circle",
+   "district"
+  ],
+  "fact": "Near the station, 23 and 24 Leinster Gardens are fake house fronts with blank windows, put up to hide the railway cutting behind them."
+ },
+ {
+  "id": "beckton",
+  "name": "Beckton",
+  "lat": 51.51436,
+  "lon": 0.06145,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "Beckton is named after Simon Adams Beck, the gas company governor in charge when work on the vast Beckton Gas Works began in 1868."
+ },
+ {
+  "id": "beckton-park",
+  "name": "Beckton Park",
+  "lat": 51.50879,
+  "lon": 0.05493,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "Tucked in a cutting under a roundabout, it is the least used station on the whole DLR network."
+ },
+ {
+  "id": "becontree",
+  "name": "Becontree",
+  "lat": 51.54033,
+  "lon": 0.12702,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "district"
+  ],
+  "fact": "It opened as Gale Street Halt in 1926 to serve a new estate that by 1935 held about 18,000 homes and 116,000 people."
+ },
+ {
+  "id": "belsize-park",
+  "name": "Belsize Park",
+  "lat": 51.55031,
+  "lon": -0.16465,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "It is one of eight Underground stations with a deep-level air-raid shelter dug beneath it during the Second World War."
+ },
+ {
+  "id": "bermondsey",
+  "name": "Bermondsey",
+  "lat": 51.49775,
+  "lon": -0.06399,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "jubilee"
+  ],
+  "fact": "Ian Ritchie's design uses latticed concrete beams so that daylight from the street reaches down to the platforms."
+ },
+ {
+  "id": "bethnal-green",
+  "name": "Bethnal Green",
+  "lat": 51.52722,
+  "lon": -0.05551,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "central",
+   "weaver"
+  ],
+  "fact": "In March 1943, years before it opened as a station, 173 people died in a crush on the stairs down to the shelter below.",
+  "outOfStationInterchange": true
+ },
+ {
+  "id": "blackfriars",
+  "name": "Blackfriars",
+  "lat": 51.51158,
+  "lon": -0.10366,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "circle",
+   "district"
+  ],
+  "fact": "It is the only London station whose platforms span the Thames, and its roof of 4,400 solar panels made it the world's largest solar bridge."
+ },
+ {
+  "id": "blackhorse-road",
+  "name": "Blackhorse Road",
+  "lat": 51.58692,
+  "lon": -0.04115,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "suffragette",
+   "victoria"
+  ],
+  "fact": "A fibreglass relief of a shying black horse on blue mosaic, by sculptor David McFall, has fronted the station since it opened in 1968."
+ },
+ {
+  "id": "blackwall",
+  "name": "Blackwall",
+  "lat": 51.50799,
+  "lon": -0.00697,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "It sits beside the northern entrance to the Blackwall Tunnel; the original Blackwall station stood further east, on what is now Jamestown Way."
+ },
+ {
+  "id": "bond-street",
+  "name": "Bond Street",
+  "lat": 51.5143,
+  "lon": -0.14972,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "central",
+   "elizabeth",
+   "jubilee"
+  ],
+  "fact": "The railway's original plans called it Davies Street, and the Elizabeth line platforms opened five months late after tunnelling problems."
+ },
+ {
+  "id": "borough",
+  "name": "Borough",
+  "lat": 51.5012,
+  "lon": -0.09337,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "It opened in 1890 on the City and South London Railway, the world's first successful deep-level tube."
+ },
+ {
+  "id": "boston-manor",
+  "name": "Boston Manor",
+  "lat": 51.49564,
+  "lon": -0.32494,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "Its Grade II listed tower carries a vertical strip of glass bricks that lights up after dark, a 1930s Art Deco beacon over the tracks."
+ },
+ {
+  "id": "bounds-green",
+  "name": "Bounds Green",
+  "lat": 51.60703,
+  "lon": -0.12423,
+  "zones": [
+   3,
+   4
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "A single bomb dropped on houses nearby on 13 October 1940 collapsed one of the platform tunnels onto people sheltering below."
+ },
+ {
+  "id": "bow-church",
+  "name": "Bow Church",
+  "lat": 51.52786,
+  "lon": -0.02094,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "It is named after the 14th-century Bow Church, and its tracks follow a railway route first opened in 1852."
+ },
+ {
+  "id": "bow-road",
+  "name": "Bow Road",
+  "lat": 51.52694,
+  "lon": -0.02513,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "district",
+   "hammersmith-city"
+  ],
+  "fact": "The Grade II listed station opened in temporary buildings in 1902, and east of it the tracks climb steeply at 1 in 40."
+ },
+ {
+  "id": "brent-cross",
+  "name": "Brent Cross",
+  "lat": 51.57665,
+  "lon": -0.21362,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "It opened in 1923 simply as Brent, after the river, and was renamed in 1976 on the day the shopping centre opened."
+ },
+ {
+  "id": "brentwood",
+  "name": "Brentwood",
+  "lat": 51.6136,
+  "lon": 0.29959,
+  "zones": [
+   9
+  ],
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "It opened in 1840 as the temporary end of the line from London, with trains going no further east until 1843."
+ },
+ {
+  "id": "brixton",
+  "name": "Brixton",
+  "lat": 51.46262,
+  "lon": -0.11489,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "victoria"
+  ],
+  "fact": "The tiled murals in the platform seat recesses, by Hans Unger, show a ton of bricks as a pun on the station's name."
+ },
+ {
+  "id": "brockley",
+  "name": "Brockley",
+  "lat": 51.46465,
+  "lon": -0.03754,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "windrush"
+  ],
+  "fact": "The name is thought to mean a woodland clearing where badgers were seen, from broc, the Old English for badger."
+ },
+ {
+  "id": "bromley-by-bow",
+  "name": "Bromley-by-Bow",
+  "lat": 51.52484,
+  "lon": -0.01154,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "district",
+   "hammersmith-city"
+  ],
+  "fact": "It was plain Bromley from 1858 until 1967, when \"by-Bow\" was added to stop people confusing it with Bromley in Kent."
+ },
+ {
+  "id": "brondesbury",
+  "name": "Brondesbury",
+  "lat": 51.54517,
+  "lon": -0.20231,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "mildmay"
+  ],
+  "fact": "It opened in 1860 as Edgeware Road (Kilburn) and went through four more names before settling on Brondesbury in 1883."
+ },
+ {
+  "id": "brondesbury-park",
+  "name": "Brondesbury Park",
+  "lat": 51.54073,
+  "lon": -0.21005,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "mildmay"
+  ],
+  "fact": "Brondesbury almost certainly takes its name from a man called Brand, who appears in documents about the manor from around 1192."
+ },
+ {
+  "id": "bruce-grove",
+  "name": "Bruce Grove",
+  "lat": 51.59396,
+  "lon": -0.06987,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "weaver"
+  ],
+  "fact": "It is named after nearby Bruce Castle, in turn named after Robert the Bruce, whose English lands here were seized by Edward I."
+ },
+ {
+  "id": "buckhurst-hill",
+  "name": "Buckhurst Hill",
+  "lat": 51.6266,
+  "lon": 0.04676,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "It opened in 1856 as a country railway station and only joined the Underground in 1948, when the branch became part of the Central line."
+ },
+ {
+  "id": "burnham",
+  "name": "Burnham",
+  "lat": 51.52351,
+  "lon": -0.64637,
+  "zones": null,
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "It opened in 1899 under the name Burnham Beeches, after the ancient woodland nearby, and only became plain Burnham in 1975."
+ },
+ {
+  "id": "burnt-oak",
+  "name": "Burnt Oak",
+  "lat": 51.60277,
+  "lon": -0.26405,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "It was nearly called Sheves Hill, a name that actually made it onto a printed Underground map in 1924."
+ },
+ {
+  "id": "bush-hill-park",
+  "name": "Bush Hill Park",
+  "lat": 51.64152,
+  "lon": -0.06922,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "weaver"
+  ],
+  "fact": "The station opened in 1880 on farmland belonging to Bush Hill Park House, and the first streets of the suburb went up within six years."
+ },
+ {
+  "id": "bushey",
+  "name": "Bushey",
+  "lat": 51.64589,
+  "lon": -0.38523,
+  "zones": [
+   8
+  ],
+  "lines": [
+   "lioness"
+  ],
+  "fact": "Bakerloo line trains from central London called here until 1982, when the Underground service was cut back."
+ },
+ {
+  "id": "caledonian-road",
+  "name": "Caledonian Road",
+  "lat": 51.54852,
+  "lon": -0.11849,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "Its lifts drop straight to platform level with no stairs in between, unusual for its age and the reason it is step-free today."
+ },
+ {
+  "id": "caledonian-road-and-barnsbury",
+  "name": "Caledonian Road & Barnsbury",
+  "lat": 51.54304,
+  "lon": -0.11673,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "mildmay"
+  ],
+  "fact": "It opened in 1870 as Barnsbury, replacing an earlier Caledonian Road station just to the west, and gained its double name in 1893."
+ },
+ {
+  "id": "cambridge-heath",
+  "name": "Cambridge Heath",
+  "lat": 51.53197,
+  "lon": -0.05728,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "weaver"
+  ],
+  "fact": "Although it opened in 1872, it had no daytime trains at all until 1998 and none in the evenings or at weekends until 2001."
+ },
+ {
+  "id": "camden-road",
+  "name": "Camden Road",
+  "lat": 51.54179,
+  "lon": -0.1387,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "mildmay"
+  ],
+  "fact": "Its Venetian Gothic building of 1870, in yellow Suffolk brick, is the last station by architect Edwin Henry Horne still used as a station."
+ },
+ {
+  "id": "camden-town",
+  "name": "Camden Town",
+  "lat": 51.53929,
+  "lon": -0.14274,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "Until 2019 it was exit-only on Sundays, because crowds heading for Camden Market made the narrow passages unsafe."
+ },
+ {
+  "id": "canada-water",
+  "name": "Canada Water",
+  "lat": 51.49793,
+  "lon": -0.0494,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "jubilee",
+   "windrush"
+  ],
+  "fact": "Its glass drum, 25 metres across, drops daylight all the way down to the Jubilee line platforms 22 metres below the street."
+ },
+ {
+  "id": "canary-wharf",
+  "name": "Canary Wharf",
+  "lat": 51.50349,
+  "lon": -0.01825,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "dlr",
+   "elizabeth",
+   "jubilee"
+  ],
+  "fact": "Norman Foster's station sits in a drained arm of the old West India Docks, in a pit 24 metres deep and 265 metres long."
+ },
+ {
+  "id": "canning-town",
+  "name": "Canning Town",
+  "lat": 51.51358,
+  "lon": 0.00832,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "dlr",
+   "jubilee"
+  ],
+  "fact": "The DLR platforms sit directly on top of the Jubilee line platforms, so changing lines means only walking up or down one flight."
+ },
+ {
+  "id": "cannon-street",
+  "name": "Cannon Street",
+  "lat": 51.51151,
+  "lon": -0.09043,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "circle",
+   "district"
+  ],
+  "fact": "The station was shut every Sunday from 1918 until January 2015, a gap of almost a century."
+ },
+ {
+  "id": "canonbury",
+  "name": "Canonbury",
+  "lat": 51.54873,
+  "lon": -0.09219,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "mildmay",
+   "windrush"
+  ],
+  "fact": "It opened in 1858 under the name Newington Road and Balls Pond Road, becoming Canonbury only in 1870."
+ },
+ {
+  "id": "canons-park",
+  "name": "Canons Park",
+  "lat": 51.6077,
+  "lon": -0.29469,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "jubilee"
+  ],
+  "fact": "With about 1.68 million passengers a year, it is the least used station on the Jubilee line."
+ },
+ {
+  "id": "carpenders-park",
+  "name": "Carpenders Park",
+  "lat": 51.62835,
+  "lon": -0.38594,
+  "zones": [
+   7
+  ],
+  "lines": [
+   "lioness"
+  ],
+  "fact": "Opened in 1914 to serve a nearby golf course, and replaced in 1952 by the present station 210 metres to the south."
+ },
+ {
+  "id": "chadwell-heath",
+  "name": "Chadwell Heath",
+  "lat": 51.56804,
+  "lon": 0.12896,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "It stands on the site of Wangey House, one of Dagenham's oldest buildings, parts of which dated back to 1250."
+ },
+ {
+  "id": "chalfont-and-latimer",
+  "name": "Chalfont & Latimer",
+  "lat": 51.66799,
+  "lon": -0.56069,
+  "zones": [
+   8
+  ],
+  "lines": [
+   "metropolitan"
+  ],
+  "fact": "It opened in 1889 as Chalfont Road, taking its double-barrelled name in 1915, and is the junction for the Chesham branch."
+ },
+ {
+  "id": "chalk-farm",
+  "name": "Chalk Farm",
+  "lat": 51.54412,
+  "lon": -0.15339,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "Its wedge-shaped building has the longest frontage of any Leslie Green station, and its lift shafts, at 21 feet, are the shallowest on the network."
+ },
+ {
+  "id": "chancery-lane",
+  "name": "Chancery Lane",
+  "lat": 51.51825,
+  "lon": -0.11158,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "The deep-level air-raid shelter beneath it was turned after the war into the Kingsway telephone exchange."
+ },
+ {
+  "id": "charing-cross",
+  "name": "Charing Cross",
+  "lat": 51.50741,
+  "lon": -0.12728,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "bakerloo",
+   "northern"
+  ],
+  "fact": "Its closed Jubilee line platforms are kept in working order and hired out for filming, appearing in Skyfall, Thor and Paddington."
+ },
+ {
+  "id": "chesham",
+  "name": "Chesham",
+  "lat": 51.70521,
+  "lon": -0.61125,
+  "zones": [
+   9
+  ],
+  "lines": [
+   "metropolitan"
+  ],
+  "fact": "The 3.89-mile gap between Chesham and Chalfont & Latimer is the longest between two adjacent stations anywhere on the Underground."
+ },
+ {
+  "id": "cheshunt",
+  "name": "Cheshunt",
+  "lat": 51.70288,
+  "lon": -0.02396,
+  "zones": [
+   8
+  ],
+  "lines": [
+   "weaver"
+  ],
+  "fact": "During the 2012 Olympics, Cheshunt was one of the main rail gateways to the canoe events at the Lee Valley White Water Centre."
+ },
+ {
+  "id": "chigwell",
+  "name": "Chigwell",
+  "lat": 51.61792,
+  "lon": 0.07504,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "The station appears in Mike Leigh's 1983 film Meantime."
+ },
+ {
+  "id": "chingford",
+  "name": "Chingford",
+  "lat": 51.63309,
+  "lon": 0.0099,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "weaver"
+  ],
+  "fact": "The station stands close to Queen Elizabeth's Hunting Lodge, and was moved to its present site in 1878, five years after it opened."
+ },
+ {
+  "id": "chiswick-park",
+  "name": "Chiswick Park",
+  "lat": 51.49463,
+  "lon": -0.26797,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "district"
+  ],
+  "fact": "Piccadilly line trains rush straight through, because the platforms only reach the outer District line tracks."
+ },
+ {
+  "id": "chorleywood",
+  "name": "Chorleywood",
+  "lat": 51.65436,
+  "lon": -0.51846,
+  "zones": [
+   7
+  ],
+  "lines": [
+   "metropolitan"
+  ],
+  "fact": "A Grade II listed K8 telephone kiosk still stands on Platform 2, now wired into TfL's internal phone system."
+ },
+ {
+  "id": "clapham-common",
+  "name": "Clapham Common",
+  "lat": 51.46174,
+  "lon": -0.13832,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "One of only two underground stations left with a narrow island platform, about 3.7 metres wide with trains on both sides."
+ },
+ {
+  "id": "clapham-high-street",
+  "name": "Clapham High Street",
+  "lat": 51.46548,
+  "lon": -0.13252,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "windrush"
+  ],
+  "fact": "The station building on the eastbound platform was destroyed by a bomb in 1944."
+ },
+ {
+  "id": "clapham-junction",
+  "name": "Clapham Junction",
+  "lat": 51.46419,
+  "lon": -0.17022,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "mildmay",
+   "windrush"
+  ],
+  "fact": "It is not in Clapham at all, and it is the busiest station in Europe by number of trains, with up to 180 an hour."
+ },
+ {
+  "id": "clapham-north",
+  "name": "Clapham North",
+  "lat": 51.46513,
+  "lon": -0.13002,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "It opened as Clapham Road in 1900 and was renamed Clapham North in 1926, when the line was extended to Morden."
+ },
+ {
+  "id": "clapham-south",
+  "name": "Clapham South",
+  "lat": 51.45265,
+  "lon": -0.14758,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "In 1948 many passengers arriving on the Empire Windrush were housed temporarily in the deep-level air-raid shelter beneath the station."
+ },
+ {
+  "id": "clapton",
+  "name": "Clapton",
+  "lat": 51.56164,
+  "lon": -0.05702,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "weaver"
+  ],
+  "fact": "Greater Anglia trains pass through Clapton every day, but none of them are scheduled to stop."
+ },
+ {
+  "id": "cockfosters",
+  "name": "Cockfosters",
+  "lat": 51.65152,
+  "lon": -0.14917,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "Platforms 2 and 3 face the same centre track from opposite sides, an arrangement railways call the Spanish solution."
+ },
+ {
+  "id": "colindale",
+  "name": "Colindale",
+  "lat": 51.59542,
+  "lon": -0.24992,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "T. E. Lawrence used this station while posted at Hendon Aerodrome and borrowed its name for his pen name, Colin Dale."
+ },
+ {
+  "id": "colliers-wood",
+  "name": "Colliers Wood",
+  "lat": 51.41816,
+  "lon": -0.17809,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "The pub across the road is called The Charles Holden, after the architect who designed the station."
+ },
+ {
+  "id": "covent-garden",
+  "name": "Covent Garden",
+  "lat": 51.51309,
+  "lon": -0.12444,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "The 260-metre run to Leicester Square is the shortest distance between any two adjacent stations on the network."
+ },
+ {
+  "id": "crossharbour",
+  "name": "Crossharbour",
+  "lat": 51.49573,
+  "lon": -0.01461,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "It was called Crossharbour & London Arena from 1994 until the arena was demolished in 2006."
+ },
+ {
+  "id": "crouch-hill",
+  "name": "Crouch Hill",
+  "lat": 51.5713,
+  "lon": -0.11715,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "suffragette"
+  ],
+  "fact": "The station opened in 1868 and sits 3.8 miles from St Pancras."
+ },
+ {
+  "id": "croxley",
+  "name": "Croxley",
+  "lat": 51.64704,
+  "lon": -0.44172,
+  "zones": [
+   7
+  ],
+  "lines": [
+   "metropolitan"
+  ],
+  "fact": "It opened as Croxley Green in 1925 and was shortened to Croxley in 1949 to stop it being confused with another Croxley Green station."
+ },
+ {
+  "id": "crystal-palace",
+  "name": "Crystal Palace",
+  "lat": 51.41811,
+  "lon": -0.07261,
+  "zones": [
+   3,
+   4
+  ],
+  "lines": [
+   "windrush"
+  ],
+  "fact": "The tunnel beside the station was cut through clay directly beneath one of the Crystal Palace's great water towers."
+ },
+ {
+  "id": "custom-house",
+  "name": "Custom House",
+  "lat": 51.50972,
+  "lon": 0.0267,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "dlr",
+   "elizabeth"
+  ],
+  "fact": "The DLR station closed for almost a year from February 2017 while it was rebuilt to make room for the Elizabeth line."
+ },
+ {
+  "id": "cutty-sark",
+  "name": "Cutty Sark",
+  "lat": 51.48167,
+  "lon": -0.01081,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "One of only four fully underground DLR stations, 20 metres down, where three-car trains open only their middle doors."
+ },
+ {
+  "id": "cyprus",
+  "name": "Cyprus",
+  "lat": 51.50847,
+  "lon": 0.06392,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "The station sits in a cutting beneath an elevated roundabout, in an area named after the Mediterranean island of Cyprus."
+ },
+ {
+  "id": "dagenham-east",
+  "name": "Dagenham East",
+  "lat": 51.5441,
+  "lon": 0.16602,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "district"
+  ],
+  "fact": "It opened simply as Dagenham in 1885 and only gained the East in its name in 1949."
+ },
+ {
+  "id": "dagenham-heathway",
+  "name": "Dagenham Heathway",
+  "lat": 51.54164,
+  "lon": 0.14753,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "district"
+  ],
+  "fact": "The station front lost its symmetry in the 1970s when 50 feet of the building was demolished to fit in a neighbouring one."
+ },
+ {
+  "id": "dalston-junction",
+  "name": "Dalston Junction",
+  "lat": 51.54612,
+  "lon": -0.07514,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "windrush"
+  ],
+  "fact": "Closed in 1986, the station stood shut for 24 years until the Mayor of London reopened it in 2010."
+ },
+ {
+  "id": "dalston-kingsland",
+  "name": "Dalston Kingsland",
+  "lat": 51.54815,
+  "lon": -0.0757,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "mildmay"
+  ],
+  "fact": "The station closed in 1865 and did not reopen for another 118 years, returning as Dalston Kingsland in 1983."
+ },
+ {
+  "id": "debden",
+  "name": "Debden",
+  "lat": 51.64539,
+  "lon": 0.08378,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "Two new lifts made Debden the 82nd step-free station on the Underground in April 2021."
+ },
+ {
+  "id": "denmark-hill",
+  "name": "Denmark Hill",
+  "lat": 51.4682,
+  "lon": -0.08936,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "windrush"
+  ],
+  "fact": "In the 1920s the waiting room housed the Mystical Church of the Comforter, where babies were baptised and one marriage was held."
+ },
+ {
+  "id": "deptford-bridge",
+  "name": "Deptford Bridge",
+  "lat": 51.47422,
+  "lon": -0.02244,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "The platforms are carried on a viaduct high above the road and Deptford Creek."
+ },
+ {
+  "id": "devons-road",
+  "name": "Devons Road",
+  "lat": 51.52267,
+  "lon": -0.01761,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "One of the few DLR stations to keep its original look, with half-cylindrical glazed blue canopies over the platforms."
+ },
+ {
+  "id": "dollis-hill",
+  "name": "Dollis Hill",
+  "lat": 51.55195,
+  "lon": -0.23907,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "jubilee"
+  ],
+  "fact": "The station has changed lines twice, opening on the Metropolitan in 1909, moving to the Bakerloo in 1939 and the Jubilee in 1979."
+ },
+ {
+  "id": "ealing-broadway",
+  "name": "Ealing Broadway",
+  "lat": 51.51502,
+  "lon": -0.30146,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "central",
+   "district",
+   "elizabeth"
+  ],
+  "fact": "The station opened in December 1838, months after Brunel's Great Western Railway first ran broad gauge trains through Ealing."
+ },
+ {
+  "id": "ealing-common",
+  "name": "Ealing Common",
+  "lat": 51.51014,
+  "lon": -0.28826,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "district",
+   "piccadilly"
+  ],
+  "fact": "Charles Holden gave the station a seven-sided ticket hall in Portland stone, glazed on every side."
+ },
+ {
+  "id": "earls-court",
+  "name": "Earl's Court",
+  "lat": 51.49206,
+  "lon": -0.19338,
+  "zones": [
+   1,
+   2
+  ],
+  "lines": [
+   "district",
+   "piccadilly"
+  ],
+  "fact": "The Underground's first escalators opened here on 4 October 1911, with a one-legged man known as Bumper Harris riding them to reassure the public."
+ },
+ {
+  "id": "east-acton",
+  "name": "East Acton",
+  "lat": 51.51661,
+  "lon": -0.24725,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "Two extra freight tracks beside the station opened in 1938 and closed in 1964, and their overgrown trackbed is still visible."
+ },
+ {
+  "id": "east-finchley",
+  "name": "East Finchley",
+  "lat": 51.58713,
+  "lon": -0.16501,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "The tunnel running from here to Morden was, when it opened, the longest railway tunnel in the world at 17.25 miles."
+ },
+ {
+  "id": "east-ham",
+  "name": "East Ham",
+  "lat": 51.53895,
+  "lon": 0.05119,
+  "zones": [
+   3,
+   4
+  ],
+  "lines": [
+   "district",
+   "hammersmith-city"
+  ],
+  "fact": "The Edwardian brick station building, rebuilt in 1902, has been Grade II listed since 1999."
+ },
+ {
+  "id": "east-india",
+  "name": "East India",
+  "lat": 51.50936,
+  "lon": -0.00233,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "The Greenwich Prime Meridian crosses the tracks at the end of the platforms, marked by an illuminated blue line at street level."
+ },
+ {
+  "id": "east-putney",
+  "name": "East Putney",
+  "lat": 51.4592,
+  "lon": -0.211,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "district"
+  ],
+  "fact": "British Rail sold the line through the station to London Underground in 1994 for the nominal sum of one pound."
+ },
+ {
+  "id": "eastcote",
+  "name": "Eastcote",
+  "lat": 51.57651,
+  "lon": -0.39737,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "metropolitan",
+   "piccadilly"
+  ],
+  "fact": "It opened in 1906 as Eastcote Halt, and Charles Holden later replaced it with a cube-shaped ticket hall of brick and glass."
+ },
+ {
+  "id": "edgware",
+  "name": "Edgware",
+  "lat": 51.61365,
+  "lon": -0.27493,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "The line was meant to carry on north-west to Bushey Heath, but the plan died when the Green Belt stopped the housing it would have served."
+ },
+ {
+  "id": "edgware-road-bakerloo",
+  "name": "Edgware Road (Bakerloo)",
+  "lat": 51.5203,
+  "lon": -0.17015,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "bakerloo"
+  ],
+  "fact": "London Transport proposed closing the station in 1983 rather than pay to replace its 77-year-old lifts, and was overruled."
+ },
+ {
+  "id": "edgware-road-circle",
+  "name": "Edgware Road (Circle)",
+  "lat": 51.51986,
+  "lon": -0.16783,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "circle",
+   "district",
+   "hammersmith-city"
+  ],
+  "fact": "One of the original stops on the world's first underground railway, open since 10 January 1863."
+ },
+ {
+  "id": "edmonton-green",
+  "name": "Edmonton Green",
+  "lat": 51.62493,
+  "lon": -0.06111,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "weaver"
+  ],
+  "fact": "The station was called Lower Edmonton (High Level) for more than a century, taking its present name only in 1992."
+ },
+ {
+  "id": "elephant-and-castle",
+  "name": "Elephant & Castle",
+  "lat": 51.49454,
+  "lon": -0.10061,
+  "zones": [
+   1,
+   2
+  ],
+  "lines": [
+   "bakerloo",
+   "northern"
+  ],
+  "fact": "A girl born here on 13 May 1924 was the first baby born on the Underground network."
+ },
+ {
+  "id": "elm-park",
+  "name": "Elm Park",
+  "lat": 51.54977,
+  "lon": 0.19864,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "district"
+  ],
+  "fact": "Built by a housing developer in 1935, it was the last station squeezed into an existing Underground line until Wood Lane in 2008."
+ },
+ {
+  "id": "elverson-road",
+  "name": "Elverson Road",
+  "lat": 51.46907,
+  "lon": -0.01673,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "The station straddles a borough boundary, so crossing the footbridge to the other platform means stepping from Lewisham into Greenwich."
+ },
+ {
+  "id": "embankment",
+  "name": "Embankment",
+  "lat": 51.50706,
+  "lon": -0.12267,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "bakerloo",
+   "circle",
+   "district",
+   "northern"
+  ],
+  "fact": "The northbound Northern line platform is the only place still using Oswald Laurence's Mind the Gap recording, restored in 2013 at his widow's request."
+ },
+ {
+  "id": "emerson-park",
+  "name": "Emerson Park",
+  "lat": 51.56864,
+  "lon": 0.22011,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "liberty"
+  ],
+  "fact": "The only stop between Romford and Upminster, and the least used London Overground station on the network."
+ },
+ {
+  "id": "enfield-town",
+  "name": "Enfield Town",
+  "lat": 51.65203,
+  "lon": -0.07933,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "weaver"
+  ],
+  "fact": "Open since 1849, the station only appeared on the Tube map in 2015, when its line was handed to London Overground."
+ },
+ {
+  "id": "epping",
+  "name": "Epping",
+  "lat": 51.69368,
+  "lon": 0.11377,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "The single-track branch that ran on from Epping to Ongar was the last part of the Underground worked by steam."
+ },
+ {
+  "id": "euston",
+  "name": "Euston",
+  "lat": 51.52806,
+  "lon": -0.13218,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "lioness",
+   "northern",
+   "victoria"
+  ],
+  "fact": "Clearing the site for HS2 meant moving about 60,000 graves from the burial ground next door, the largest exhumation in British history."
+ },
+ {
+  "id": "euston-square",
+  "name": "Euston Square",
+  "lat": 51.5256,
+  "lon": -0.13583,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "circle",
+   "hammersmith-city",
+   "metropolitan"
+  ],
+  "fact": "It opened in 1863 as Gower Street and kept that name for 46 years before becoming Euston Square in 1909."
+ },
+ {
+  "id": "fairlop",
+  "name": "Fairlop",
+  "lat": 51.59562,
+  "lon": 0.091,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "The platform canopies still carry the old Great Eastern Railway's symbol in their ironwork."
+ },
+ {
+  "id": "farringdon",
+  "name": "Farringdon",
+  "lat": 51.52025,
+  "lon": -0.10491,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "circle",
+   "elizabeth",
+   "hammersmith-city",
+   "metropolitan"
+  ],
+  "fact": "The only station in the country served by both the north-south Thameslink route and the east-west Elizabeth line."
+ },
+ {
+  "id": "finchley-central",
+  "name": "Finchley Central",
+  "lat": 51.60092,
+  "lon": -0.19253,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "The New Vaudeville Band reached number 11 in 1967 with Finchley Central, a song about waiting on the platform for someone who never arrives."
+ },
+ {
+  "id": "finchley-road",
+  "name": "Finchley Road",
+  "lat": 51.54682,
+  "lon": -0.17985,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "jubilee",
+   "metropolitan"
+  ],
+  "fact": "Metropolitan line trains use the outer platforms and Jubilee line trains the inner pair, all four in the same cutting."
+ },
+ {
+  "id": "finchley-road-and-frognal",
+  "name": "Finchley Road & Frognal",
+  "lat": 51.55027,
+  "lon": -0.18314,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "mildmay"
+  ],
+  "fact": "The station opened in 1860 under the considerably longer name Finchley Road St Johns Wood."
+ },
+ {
+  "id": "finsbury-park",
+  "name": "Finsbury Park",
+  "lat": 51.56416,
+  "lon": -0.10683,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "piccadilly",
+   "victoria"
+  ],
+  "fact": "The Victoria line platforms are decorated with duelling pistols, thanks to a mix-up with Finsbury Fields three miles away."
+ },
+ {
+  "id": "forest-gate",
+  "name": "Forest Gate",
+  "lat": 51.54943,
+  "lon": 0.02435,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "The station was shut down in 1843 and only reopened in 1846 after local residents pressed the railway to bring it back."
+ },
+ {
+  "id": "forest-hill",
+  "name": "Forest Hill",
+  "lat": 51.43928,
+  "lon": -0.05316,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "windrush"
+  ],
+  "fact": "It opened in 1839 as Dartmouth Arms, named after the local inn, and became Forest Hill in 1845."
+ },
+ {
+  "id": "fulham-broadway",
+  "name": "Fulham Broadway",
+  "lat": 51.48008,
+  "lon": -0.19542,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "district"
+  ],
+  "fact": "The 1905 entrance was built by Harry W Ford specifically to cope with crowds heading for the new Stamford Bridge stadium."
+ },
+ {
+  "id": "gallions-reach",
+  "name": "Gallions Reach",
+  "lat": 51.50894,
+  "lon": 0.07155,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "The station is named after Gallions Reach, a stretch of the Thames, rather than after anywhere on dry land."
+ },
+ {
+  "id": "gants-hill",
+  "name": "Gants Hill",
+  "lat": 51.57654,
+  "lon": 0.06618,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "Its barrel-vaulted concourse was modelled on the Moscow Metro, and it is the only Charles Holden station with no building at street level."
+ },
+ {
+  "id": "gidea-park",
+  "name": "Gidea Park",
+  "lat": 51.5819,
+  "lon": 0.20596,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "It opened in 1910 as Squirrels Heath & Gidea Park, swapped the two halves round in 1913, and dropped the squirrels in 1969."
+ },
+ {
+  "id": "gloucester-road",
+  "name": "Gloucester Road",
+  "lat": 51.49432,
+  "lon": -0.18266,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "circle",
+   "district",
+   "piccadilly"
+  ],
+  "fact": "A disused platform here is used as a gallery for Art on the Underground, showing work by artists including David Shrigley."
+ },
+ {
+  "id": "golders-green",
+  "name": "Golders Green",
+  "lat": 51.57226,
+  "lon": -0.19404,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "In the tunnels south of the station lies North End, or Bull & Bush, a station that was partly built and never finished."
+ },
+ {
+  "id": "goldhawk-road",
+  "name": "Goldhawk Road",
+  "lat": 51.502,
+  "lon": -0.22671,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "circle",
+   "hammersmith-city"
+  ],
+  "fact": "Trains ran past this spot for 50 years before anyone built a station here, in 1914."
+ },
+ {
+  "id": "goodge-street",
+  "name": "Goodge Street",
+  "lat": 51.5206,
+  "lon": -0.13436,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "From 1943 the deep-level shelter beneath the station was used by the Supreme Headquarters Allied Expeditionary Force."
+ },
+ {
+  "id": "goodmayes",
+  "name": "Goodmayes",
+  "lat": 51.56558,
+  "lon": 0.11081,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "Its goods yard once connected to the Becontree Estate Railway, a temporary line laid to carry building materials for the vast Becontree housing estate."
+ },
+ {
+  "id": "gospel-oak",
+  "name": "Gospel Oak",
+  "lat": 51.55533,
+  "lon": -0.15077,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "mildmay",
+   "suffragette"
+  ],
+  "fact": "The platforms for the Barking line closed in 1926 and stayed shut for 55 years, only reopening in 1981."
+ },
+ {
+  "id": "grange-hill",
+  "name": "Grange Hill",
+  "lat": 51.61338,
+  "lon": 0.09207,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "The original 1903 station building was destroyed by a German V1 flying bomb in July 1944 and had to be rebuilt."
+ },
+ {
+  "id": "great-portland-street",
+  "name": "Great Portland Street",
+  "lat": 51.52384,
+  "lon": -0.14426,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "circle",
+   "hammersmith-city",
+   "metropolitan"
+  ],
+  "fact": "It opened in 1863 as Portland Road on the world's first underground railway, and from 1923 to 1933 was called Great Portland Street and Regents Park."
+ },
+ {
+  "id": "green-park",
+  "name": "Green Park",
+  "lat": 51.50695,
+  "lon": -0.14279,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "jubilee",
+   "piccadilly",
+   "victoria"
+  ],
+  "fact": "The station was called Dover Street until 1933, when a new ticket hall moved the entrance and it was renamed after the park above."
+ },
+ {
+  "id": "greenford",
+  "name": "Greenford",
+  "lat": 51.54242,
+  "lon": -0.34605,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "It kept the last wooden-treaded escalator on the Underground until 2014, and had the first escalator carrying passengers up to platforms above street level."
+ },
+ {
+  "id": "greenwich",
+  "name": "Greenwich",
+  "lat": 51.47809,
+  "lon": -0.01367,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "The station building dates from 1840 and is one of the oldest surviving railway station buildings anywhere in the world."
+ },
+ {
+  "id": "gunnersbury",
+  "name": "Gunnersbury",
+  "lat": 51.4918,
+  "lon": -0.27527,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "district",
+   "mildmay"
+  ],
+  "fact": "The station opened in 1869 under the name Brentford Road and was renamed Gunnersbury two years later."
+ },
+ {
+  "id": "hackney-central",
+  "name": "Hackney Central",
+  "lat": 51.54711,
+  "lon": -0.05606,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "mildmay"
+  ],
+  "fact": "The station closed in 1944 and did not reopen for 36 years; its original 1870 building is now a bar and music venue."
+ },
+ {
+  "id": "hackney-downs",
+  "name": "Hackney Downs",
+  "lat": 51.54876,
+  "lon": -0.06082,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "weaver"
+  ],
+  "fact": "It opened in 1872 under the name Hackney Downs Junction, which it kept until 1896."
+ },
+ {
+  "id": "hackney-wick",
+  "name": "Hackney Wick",
+  "lat": 51.54341,
+  "lon": -0.02492,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "mildmay"
+  ],
+  "fact": "Opened only in 1980, the station was rebuilt in 2018 with a subway that doubles as a public cycle and foot route between Hackney and Tower Hamlets."
+ },
+ {
+  "id": "haggerston",
+  "name": "Haggerston",
+  "lat": 51.53871,
+  "lon": -0.07567,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "windrush"
+  ],
+  "fact": "The station closed in May 1940 and its building was bombed months later; it did not reopen for 70 years, until 2010."
+ },
+ {
+  "id": "hainault",
+  "name": "Hainault",
+  "lat": 51.60366,
+  "lon": 0.09348,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "Its lifts are the shallowest on the London Underground, dropping just 18 inches between levels."
+ },
+ {
+  "id": "hammersmith-district-and-piccadilly",
+  "name": "Hammersmith (District & Piccadilly)",
+  "lat": 51.4923,
+  "lon": -0.22362,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "district",
+   "piccadilly"
+  ],
+  "fact": "The platforms sit in a cutting directly below Hammersmith bus station, with cross-platform changes between the District and Piccadilly lines."
+ },
+ {
+  "id": "hammersmith-h-and-c-and-circle",
+  "name": "Hammersmith (H&C & Circle)",
+  "lat": 51.49339,
+  "lon": -0.22503,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "circle",
+   "hammersmith-city"
+  ],
+  "fact": "This is the second station on the site: the original of 1864 stood slightly to the north and was replaced by the present one in 1868."
+ },
+ {
+  "id": "hampstead",
+  "name": "Hampstead",
+  "lat": 51.55624,
+  "lon": -0.17746,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "Its platforms are the deepest on the Underground at 58.5 metres below ground, reached by the network's deepest lift shaft."
+ },
+ {
+  "id": "hampstead-heath",
+  "name": "Hampstead Heath",
+  "lat": 51.55521,
+  "lon": -0.1657,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "mildmay"
+  ],
+  "fact": "In the nineteenth century as many as 100,000 people a day used the station at weekends and on public holidays, heading for the Heath."
+ },
+ {
+  "id": "hanger-lane",
+  "name": "Hanger Lane",
+  "lat": 51.53018,
+  "lon": -0.2927,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "The roof of its ticket hall forms the centre of the Hanger Lane Gyratory, where the A40 crosses the North Circular."
+ },
+ {
+  "id": "hanwell",
+  "name": "Hanwell",
+  "lat": 51.51183,
+  "lon": -0.33858,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "Between 1883 and 1885 District Railway trains called here on their way from Mansion House to Windsor, before the service was dropped as uneconomic."
+ },
+ {
+  "id": "harlesden",
+  "name": "Harlesden",
+  "lat": 51.53631,
+  "lon": -0.25788,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "bakerloo",
+   "lioness"
+  ],
+  "fact": "An earlier station called Willesden stood on this site from 1841 until 1866; the present Harlesden opened in 1912."
+ },
+ {
+  "id": "harold-wood",
+  "name": "Harold Wood",
+  "lat": 51.59277,
+  "lon": 0.23313,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "The name appears as Horalds Wood around 1237 and comes from King Harold Godwinson, defeated by William the Conqueror in 1066."
+ },
+ {
+  "id": "harringay-green-lanes",
+  "name": "Harringay Green Lanes",
+  "lat": 51.57718,
+  "lon": -0.09814,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "suffragette"
+  ],
+  "fact": "The station has carried six names since 1880, among them Harringay Stadium, and was given very long platforms for the crowds heading to the arena."
+ },
+ {
+  "id": "harrow-and-wealdstone",
+  "name": "Harrow & Wealdstone",
+  "lat": 51.59227,
+  "lon": -0.33522,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "bakerloo",
+   "lioness"
+  ],
+  "fact": "The worst peacetime rail disaster in British history happened here on 8 October 1952, when 112 people were killed and 340 injured."
+ },
+ {
+  "id": "harrow-on-the-hill",
+  "name": "Harrow-on-the-Hill",
+  "lat": 51.57919,
+  "lon": -0.33722,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "metropolitan"
+  ],
+  "fact": "The station is not on Harrow Hill but at the foot of it, in what was a small hamlet called Greenhill when it opened."
+ },
+ {
+  "id": "hatch-end",
+  "name": "Hatch End",
+  "lat": 51.60942,
+  "lon": -0.3686,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "lioness"
+  ],
+  "fact": "The present station was built in 1911 to a design by Gerald Horsley, son of the painter John Callcott Horsley."
+ },
+ {
+  "id": "hatton-cross",
+  "name": "Hatton Cross",
+  "lat": 51.46675,
+  "lon": -0.42319,
+  "zones": [
+   5,
+   6
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "The platform tiling is patterned after the British Airways Speedbird logo, designed by Theyre Lee-Elliott in 1932."
+ },
+ {
+  "id": "hayes-and-harlington",
+  "name": "Hayes & Harlington",
+  "lat": 51.5031,
+  "lon": -0.42068,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "The film Trains at Hayes Station, shot from a factory roof beside the platforms, was among the first demonstrations of stereophonic sound with moving pictures."
+ },
+ {
+  "id": "headstone-lane",
+  "name": "Headstone Lane",
+  "lat": 51.60265,
+  "lon": -0.35722,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "lioness"
+  ],
+  "fact": "Bakerloo line trains served this station for 65 years, from 1917 until they were withdrawn in September 1982."
+ },
+ {
+  "id": "heathrow-terminal-4",
+  "name": "Heathrow Terminal 4",
+  "lat": 51.45852,
+  "lon": -0.44577,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "elizabeth",
+   "piccadilly"
+  ],
+  "fact": "It is the only station on the Underground where trains run one way only, arriving at its single platform round a loop."
+ },
+ {
+  "id": "heathrow-terminal-5",
+  "name": "Heathrow Terminal 5",
+  "lat": 51.47005,
+  "lon": -0.49056,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "elizabeth",
+   "piccadilly"
+  ],
+  "fact": "Though the station is underground, translucent ETFE panels in the roof let daylight reach both ends of all six platforms."
+ },
+ {
+  "id": "heathrow-terminals-2-and-3",
+  "name": "Heathrow Terminals 2 & 3",
+  "lat": 51.47124,
+  "lon": -0.45226,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "elizabeth",
+   "piccadilly"
+  ],
+  "fact": "Queen Elizabeth II opened the station in 1977 under the name Heathrow Central; it has been renamed three times since, most recently in 2016."
+ },
+ {
+  "id": "hendon-central",
+  "name": "Hendon Central",
+  "lat": 51.5833,
+  "lon": -0.22642,
+  "zones": [
+   3,
+   4
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "Its Grade II listed neo-Georgian entrance, with a Doric colonnade, was designed by Stanley Heaps as the centrepiece of a whole new suburban town."
+ },
+ {
+  "id": "heron-quays",
+  "name": "Heron Quays",
+  "lat": 51.50338,
+  "lon": -0.02142,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "The station was rebuilt in 2002 inside a new Canary Wharf office tower, with an interior designed by Alsop Architects."
+ },
+ {
+  "id": "high-barnet",
+  "name": "High Barnet",
+  "lat": 51.65054,
+  "lon": -0.1943,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "A bell cast in 1869 was rung for departing steam trains here until it was handed to Barnet Museum in 1940."
+ },
+ {
+  "id": "high-street-kensington",
+  "name": "High Street Kensington",
+  "lat": 51.50106,
+  "lon": -0.19279,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "circle",
+   "district"
+  ],
+  "fact": "Platform 3 has one of the few surviving K8 telephone kiosks in Britain, which is Grade II listed."
+ },
+ {
+  "id": "highams-park",
+  "name": "Highams Park",
+  "lat": 51.60835,
+  "lon": -0.00022,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "weaver"
+  ],
+  "fact": "The station opened in 1873 as Hale End and did not settle on the name Highams Park until 1969."
+ },
+ {
+  "id": "highbury-and-islington",
+  "name": "Highbury & Islington",
+  "lat": 51.54635,
+  "lon": -0.10332,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "mildmay",
+   "victoria",
+   "windrush"
+  ],
+  "fact": "A V-1 flying bomb hit the station in June 1944; its 1850 building survived that, only to be demolished in the 1960s for the Victoria line."
+ },
+ {
+  "id": "highgate",
+  "name": "Highgate",
+  "lat": 51.57753,
+  "lon": -0.14586,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "Overgrown surface platforms still stand beside the tube station; they last saw a train in 1954 and the track was lifted by 1972."
+ },
+ {
+  "id": "hillingdon",
+  "name": "Hillingdon",
+  "lat": 51.55371,
+  "lon": -0.44983,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "metropolitan",
+   "piccadilly"
+  ],
+  "fact": "The old station was demolished so the A40 could be widened, and its 1990s replacement won a Civic Trust Award for its deconstructivist design."
+ },
+ {
+  "id": "holborn",
+  "name": "Holborn",
+  "lat": 51.51758,
+  "lon": -0.12047,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "central",
+   "piccadilly"
+  ],
+  "fact": "Tunnels on the closed Aldwych branch here sheltered treasures from the British Museum during the war, including the Elgin Marbles."
+ },
+ {
+  "id": "holland-park",
+  "name": "Holland Park",
+  "lat": 51.50714,
+  "lon": -0.20568,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "The station was given a flat roof in 1900 in the hope that a building would go up on top, as at Queensway, but nothing ever has."
+ },
+ {
+  "id": "holloway-road",
+  "name": "Holloway Road",
+  "lat": 51.5527,
+  "lon": -0.11324,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "A spiral escalator built here by Jesse W. Reno never carried a passenger; parts of it were later dug out and kept by the London Transport Museum."
+ },
+ {
+  "id": "homerton",
+  "name": "Homerton",
+  "lat": 51.54701,
+  "lon": -0.04236,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "mildmay"
+  ],
+  "fact": "The station closed during the war in 1944 and stayed shut for 40 years, reopening only in May 1985."
+ },
+ {
+  "id": "honor-oak-park",
+  "name": "Honor Oak Park",
+  "lat": 51.44999,
+  "lon": -0.0455,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "windrush"
+  ],
+  "fact": "The housebuilders developing the area put £1,000 towards the cost of building the station, and it was named to distinguish it from nearby Honor Oak."
+ },
+ {
+  "id": "hornchurch",
+  "name": "Hornchurch",
+  "lat": 51.55409,
+  "lon": 0.21912,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "district"
+  ],
+  "fact": "The station was rebuilt in 1932 by the LMS architect William Henry Hamlyn, in a style borrowed from London Underground stations of the day."
+ },
+ {
+  "id": "hounslow-central",
+  "name": "Hounslow Central",
+  "lat": 51.47129,
+  "lon": -0.36658,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "It opened in 1886 as Heston & Hounslow and was renamed in 1925, on the same day as Hounslow East and Hounslow West."
+ },
+ {
+  "id": "hounslow-east",
+  "name": "Hounslow East",
+  "lat": 51.47321,
+  "lon": -0.35647,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "Staff play classical music over the public address system as an experiment to discourage anti-social behaviour at the station."
+ },
+ {
+  "id": "hounslow-west",
+  "name": "Hounslow West",
+  "lat": 51.47347,
+  "lon": -0.38654,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "Charles Holden's 1931 ticket hall is seven-sided, a theme carried through to a chandelier with seven lamps."
+ },
+ {
+  "id": "hoxton",
+  "name": "Hoxton",
+  "lat": 51.53151,
+  "lon": -0.07568,
+  "zones": [
+   1,
+   2
+  ],
+  "lines": [
+   "windrush"
+  ],
+  "fact": "The First World War memorial at the entrance came from the closed Broad Street station by way of Richmond, returning near its original home in 2011."
+ },
+ {
+  "id": "hyde-park-corner",
+  "name": "Hyde Park Corner",
+  "lat": 51.50303,
+  "lon": -0.15244,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "Leslie Green's ox-blood tiled station building was left behind when escalators replaced the lifts in 1932, and is now part of the Wellesley Hotel."
+ },
+ {
+  "id": "ickenham",
+  "name": "Ickenham",
+  "lat": 51.56199,
+  "lon": -0.442,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "metropolitan",
+   "piccadilly"
+  ],
+  "fact": "When the halt opened, villagers living nearby sold flowers from their gardens and served teas to Londoners out for a day in the country."
+ },
+ {
+  "id": "ilford",
+  "name": "Ilford",
+  "lat": 51.55912,
+  "lon": 0.06968,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "The station once handled 200,000 milk churns, and a bridge fitted with lifts down to platform level was built to move them."
+ },
+ {
+  "id": "imperial-wharf",
+  "name": "Imperial Wharf",
+  "lat": 51.47495,
+  "lon": -0.18282,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "mildmay"
+  ],
+  "fact": "One of London's newest stations, it opened in 2009 to serve a former industrial riverside site rebuilt as 1,800 flats."
+ },
+ {
+  "id": "island-gardens",
+  "name": "Island Gardens",
+  "lat": 51.48781,
+  "lon": -0.01014,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "In March 1987, before the DLR opened, a test train crashed through the buffers and was left hanging from the end of the elevated track here."
+ },
+ {
+  "id": "iver",
+  "name": "Iver",
+  "lat": 51.5085,
+  "lon": -0.50673,
+  "zones": null,
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "Trains had been passing the spot for 86 years before a station appeared: the line opened in 1838, but Iver station only in 1924."
+ },
+ {
+  "id": "kennington",
+  "name": "Kennington",
+  "lat": 51.48834,
+  "lon": -0.10596,
+  "zones": [
+   1,
+   2
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "Its T. P. Figgis building is the only station of the original City & South London Railway still close to its first design, and the only listed one."
+ },
+ {
+  "id": "kensal-green",
+  "name": "Kensal Green",
+  "lat": 51.53054,
+  "lon": -0.22502,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "bakerloo",
+   "lioness"
+  ],
+  "fact": "In October 1986 a British Rail train ran into the back of an Underground train at the station, injuring 23 people."
+ },
+ {
+  "id": "kensal-rise",
+  "name": "Kensal Rise",
+  "lat": 51.53455,
+  "lon": -0.21996,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "mildmay"
+  ],
+  "fact": "The station opened in 1873 under the name Kensal Green and was only renamed Kensal Rise in 1890."
+ },
+ {
+  "id": "kensington-olympia",
+  "name": "Kensington (Olympia)",
+  "lat": 51.49762,
+  "lon": -0.21002,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "district",
+   "mildmay"
+  ],
+  "fact": "Bombed in the Second World War and closed, it reopened in 1946 and later served as a terminus for Motorail car-carrying trains."
+ },
+ {
+  "id": "kentish-town",
+  "name": "Kentish Town",
+  "lat": 51.55031,
+  "lon": -0.14073,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "The tube station shut in June 2023 so its two escalators could be replaced, and did not reopen until December 2024, six months late."
+ },
+ {
+  "id": "kentish-town-west",
+  "name": "Kentish Town West",
+  "lat": 51.54655,
+  "lon": -0.14666,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "mildmay"
+  ],
+  "fact": "A fire closed the station in April 1971 and it stayed shut for more than ten years, reopening in October 1981."
+ },
+ {
+  "id": "kenton",
+  "name": "Kenton",
+  "lat": 51.58176,
+  "lon": -0.31691,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "bakerloo",
+   "lioness"
+  ],
+  "fact": "The station's old coal yard, no longer needed by the railway, is now the site of a Sainsbury's supermarket."
+ },
+ {
+  "id": "kew-gardens",
+  "name": "Kew Gardens",
+  "lat": 51.47706,
+  "lon": -0.28524,
+  "zones": [
+   3,
+   4
+  ],
+  "lines": [
+   "district",
+   "mildmay"
+  ],
+  "fact": "It is the only station on the Underground with a pub attached, once reached by a door leading straight onto platform 1."
+ },
+ {
+  "id": "kilburn",
+  "name": "Kilburn",
+  "lat": 51.54718,
+  "lon": -0.20425,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "jubilee"
+  ],
+  "fact": "A viaduct just beyond the platforms still carries the words METROPOLITAN RAILWAY and the date 1914 along its sides."
+ },
+ {
+  "id": "kilburn-high-road",
+  "name": "Kilburn High Road",
+  "lat": 51.53728,
+  "lon": -0.19224,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "lioness"
+  ],
+  "fact": "Its street-level buildings and footbridge are the result not of modernisation but of three or four major fires since the early 1970s."
+ },
+ {
+  "id": "kilburn-park",
+  "name": "Kilburn Park",
+  "lat": 51.53498,
+  "lon": -0.19423,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "bakerloo"
+  ],
+  "fact": "Designed by Stanley Heaps, it was one of the first Underground stations built specifically to use escalators rather than lifts."
+ },
+ {
+  "id": "king-george-v",
+  "name": "King George V",
+  "lat": 51.502,
+  "lon": 0.06262,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "Named after the dock beside it, the station was the end of the line until 2009, when the DLR was extended under the Thames to Woolwich Arsenal."
+ },
+ {
+  "id": "kings-cross-st-pancras",
+  "name": "King's Cross St. Pancras",
+  "lat": 51.53066,
+  "lon": -0.12319,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "circle",
+   "hammersmith-city",
+   "metropolitan",
+   "northern",
+   "piccadilly",
+   "victoria"
+  ],
+  "fact": "The 1987 fire that killed 31 people here revealed a previously unknown effect, since called the trench effect, that sends flames racing up escalators."
+ },
+ {
+  "id": "kingsbury",
+  "name": "Kingsbury",
+  "lat": 51.58485,
+  "lon": -0.27879,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "jubilee"
+  ],
+  "fact": "The name is something of a fiction: the station stands in the eastern edge of Kenton, and Kingsbury proper is closer to Neasden."
+ },
+ {
+  "id": "knightsbridge",
+  "name": "Knightsbridge",
+  "lat": 51.50167,
+  "lon": -0.16051,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "The station only became step-free in April 2025, more than a century after it opened, when a new entrance was built."
+ },
+ {
+  "id": "ladbroke-grove",
+  "name": "Ladbroke Grove",
+  "lat": 51.51745,
+  "lon": -0.21039,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "circle",
+   "hammersmith-city"
+  ],
+  "fact": "It opened in 1864 as Notting Hill, and was renamed to stop passengers confusing it with the newer Notting Hill Gate."
+ },
+ {
+  "id": "lambeth-north",
+  "name": "Lambeth North",
+  "lat": 51.49881,
+  "lon": -0.11231,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "bakerloo"
+  ],
+  "fact": "A German bomb in January 1941 wrecked the southbound platform tunnel, injuring 28 people who were sheltering there."
+ },
+ {
+  "id": "lancaster-gate",
+  "name": "Lancaster Gate",
+  "lat": 51.51172,
+  "lon": -0.17549,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "Despite the name, the station sits about 300 metres east of the Lancaster Gate entrance to Kensington Gardens."
+ },
+ {
+  "id": "langdon-park",
+  "name": "Langdon Park",
+  "lat": 51.51517,
+  "lon": -0.01415,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "An infill station slotted into an existing stretch of railway, it cost £10.5 million and opened in December 2007."
+ },
+ {
+  "id": "langley",
+  "name": "Langley",
+  "lat": 51.50806,
+  "lon": -0.54176,
+  "zones": null,
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "Trains ran through Langley on Brunel's Great Western main line from 1838, but the village waited until 1845 for a station."
+ },
+ {
+  "id": "latimer-road",
+  "name": "Latimer Road",
+  "lat": 51.51339,
+  "lon": -0.2178,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "circle",
+   "hammersmith-city"
+  ],
+  "fact": "The station stands roughly 500 metres from Latimer Road itself, which was named after the Elizabethan benefactor Edward Latymer."
+ },
+ {
+  "id": "leicester-square",
+  "name": "Leicester Square",
+  "lat": 51.51139,
+  "lon": -0.12843,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "northern",
+   "piccadilly"
+  ],
+  "fact": "Film sprocket holes are painted along all four platforms, a nod to the premiere cinemas in the square above."
+ },
+ {
+  "id": "lewisham",
+  "name": "Lewisham",
+  "lat": 51.46466,
+  "lon": -0.01287,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "Platform 3 keeps its original canopy, held up by cast iron brackets decorated with cherries."
+ },
+ {
+  "id": "leyton",
+  "name": "Leyton",
+  "lat": 51.55659,
+  "lon": -0.00552,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "The station opened under the name Low Leyton, becoming plain Leyton in 1867."
+ },
+ {
+  "id": "leyton-midland-road",
+  "name": "Leyton Midland Road",
+  "lat": 51.56972,
+  "lon": -0.00805,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "suffragette"
+  ],
+  "fact": "It opened in 1894 simply as Leyton, and only gained the Midland Road part of its name in 1949."
+ },
+ {
+  "id": "leytonstone",
+  "name": "Leytonstone",
+  "lat": 51.56832,
+  "lon": 0.00819,
+  "zones": [
+   3,
+   4
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "Mosaics of Alfred Hitchcock's life and films line the station, commissioned for the centenary of the director's birth nearby."
+ },
+ {
+  "id": "leytonstone-high-road",
+  "name": "Leytonstone High Road",
+  "lat": 51.56355,
+  "lon": 0.00842,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "suffragette"
+  ],
+  "fact": "Goods wagons were once lowered from the raised railway arches to the yard below by hydraulic hoist."
+ },
+ {
+  "id": "limehouse",
+  "name": "Limehouse",
+  "lat": 51.51239,
+  "lon": -0.03981,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "The Great Storm of 1987 destroyed the station's roof and canopy."
+ },
+ {
+  "id": "liverpool-street",
+  "name": "Liverpool Street",
+  "lat": 51.51737,
+  "lon": -0.08318,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "central",
+   "circle",
+   "elizabeth",
+   "hammersmith-city",
+   "metropolitan",
+   "weaver"
+  ],
+  "fact": "The station was built on a ten-acre site previously occupied by the Bethlem Royal Hospital, the asylum known as Bedlam."
+ },
+ {
+  "id": "london-bridge",
+  "name": "London Bridge",
+  "lat": 51.50572,
+  "lon": -0.08887,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "jubilee",
+   "northern"
+  ],
+  "fact": "Opened in 1836, it is the oldest railway station in London's zone 1 and one of the oldest anywhere in the world."
+ },
+ {
+  "id": "london-city-airport",
+  "name": "London City Airport",
+  "lat": 51.50342,
+  "lon": 0.04874,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "Drew Primary School, a century-old building with classrooms on its roof, stood on the site before the station was built."
+ },
+ {
+  "id": "london-fields",
+  "name": "London Fields",
+  "lat": 51.54115,
+  "lon": -0.05775,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "weaver"
+  ],
+  "fact": "A fire in 1981 badly damaged the station buildings and services stopped for five years before it reopened in 1986."
+ },
+ {
+  "id": "loughton",
+  "name": "Loughton",
+  "lat": 51.64144,
+  "lon": 0.05548,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "The Grade II listed station, designed by John Murray Easton, has sweeping gull-winged concrete canopies over its platforms."
+ },
+ {
+  "id": "maida-vale",
+  "name": "Maida Vale",
+  "lat": 51.52978,
+  "lon": -0.18576,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "bakerloo"
+  ],
+  "fact": "When it opened in 1915 it was the first station on the Underground to be staffed entirely by women."
+ },
+ {
+  "id": "maidenhead",
+  "name": "Maidenhead",
+  "lat": 51.51867,
+  "lon": -0.72266,
+  "zones": null,
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "A bronze statue on platform 3 honours Sir Nicholas Winton, who brought 669 children out of Prague in 1939."
+ },
+ {
+  "id": "manor-house",
+  "name": "Manor House",
+  "lat": 51.57074,
+  "lon": -0.09612,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "Charles Holden gave the station nine street-level entrances, two of them built to feed passengers straight onto the trams."
+ },
+ {
+  "id": "manor-park",
+  "name": "Manor Park",
+  "lat": 51.55248,
+  "lon": 0.04634,
+  "zones": [
+   3,
+   4
+  ],
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "The station opened in 1873 under the longer name Manor Park and Little Ilford."
+ },
+ {
+  "id": "mansion-house",
+  "name": "Mansion House",
+  "lat": 51.51212,
+  "lon": -0.09401,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "circle",
+   "district"
+  ],
+  "fact": "Britain's first penny chocolate vending machine was installed here in July 1886."
+ },
+ {
+  "id": "marble-arch",
+  "name": "Marble Arch",
+  "lat": 51.51342,
+  "lon": -0.15895,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "The plain white platform tiles were replaced in 1985 by enamel panels designed by the artist Annabel Grey."
+ },
+ {
+  "id": "maryland",
+  "name": "Maryland",
+  "lat": 51.54608,
+  "lon": 0.00581,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "It opened in 1873 as Maryland Point and lost the Point from its name in 1940."
+ },
+ {
+  "id": "marylebone",
+  "name": "Marylebone",
+  "lat": 51.52232,
+  "lon": -0.16321,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "bakerloo"
+  ],
+  "fact": "Several scenes of the Beatles' film A Hard Day's Night were shot here in April 1964."
+ },
+ {
+  "id": "mile-end",
+  "name": "Mile End",
+  "lat": 51.52512,
+  "lon": -0.03364,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "central",
+   "district",
+   "hammersmith-city"
+  ],
+  "fact": "In 2007 a Central line train was derailed here after hitting a roll of fire blanket blown out of a cross-passage between the tunnels."
+ },
+ {
+  "id": "mill-hill-east",
+  "name": "Mill Hill East",
+  "lat": 51.60823,
+  "lon": -0.20999,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "It is the only station on a single-track branch of the Northern line, extended there to serve the army's Inglis Barracks."
+ },
+ {
+  "id": "monument",
+  "name": "Monument",
+  "lat": 51.5107,
+  "lon": -0.08597,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "circle",
+   "district"
+  ],
+  "fact": "The station opened as Eastcheap in October 1884 and was renamed The Monument less than a month later."
+ },
+ {
+  "id": "moor-park",
+  "name": "Moor Park",
+  "lat": 51.62985,
+  "lon": -0.43245,
+  "zones": [
+   6,
+   7
+  ],
+  "lines": [
+   "metropolitan"
+  ],
+  "fact": "The station was originally called Sandy Lodge, after the golf course it was built to serve."
+ },
+ {
+  "id": "moorgate",
+  "name": "Moorgate",
+  "lat": 51.51818,
+  "lon": -0.08832,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "circle",
+   "hammersmith-city",
+   "metropolitan",
+   "northern"
+  ],
+  "fact": "The 1975 crash here, in which a train ran at speed into a dead-end tunnel, killed 43 people and remains the Underground's worst peacetime accident."
+ },
+ {
+  "id": "morden",
+  "name": "Morden",
+  "lat": 51.40214,
+  "lon": -0.19484,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "This is the most southerly station on the whole Underground network."
+ },
+ {
+  "id": "mornington-crescent",
+  "name": "Mornington Crescent",
+  "lat": 51.53468,
+  "lon": -0.13879,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "Closed in 1992 to replace its lifts, it stayed shut for six years, reopening after a campaign helped along by the Radio 4 game named after it."
+ },
+ {
+  "id": "mudchute",
+  "name": "Mudchute",
+  "lat": 51.4907,
+  "lon": -0.01474,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "It was going to be called Millwall Park, but locals feared away fans would arrive here and find the ground was across the river."
+ },
+ {
+  "id": "neasden",
+  "name": "Neasden",
+  "lat": 51.55399,
+  "lon": -0.24984,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "jubilee"
+  ],
+  "fact": "The station opened in 1880 under the name Kingsbury and Neasden, dropping Kingsbury only in 1932."
+ },
+ {
+  "id": "new-cross",
+  "name": "New Cross",
+  "lat": 51.47634,
+  "lon": -0.03244,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "windrush"
+  ],
+  "fact": "A fire that started in a paint shop in October 1844 destroyed the carriage sheds, engine sheds and workshops beside the station."
+ },
+ {
+  "id": "new-cross-gate",
+  "name": "New Cross Gate",
+  "lat": 51.47513,
+  "lon": -0.0404,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "windrush"
+  ],
+  "fact": "For a few months in 1847 this was the northern terminus of an experimental atmospheric railway, which moved trains without locomotives."
+ },
+ {
+  "id": "newbury-park",
+  "name": "Newbury Park",
+  "lat": 51.57573,
+  "lon": 0.09,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "Its copper barrel-vaulted bus station, designed by Oliver Hill, won a Festival of Britain award in 1951 and is Grade II listed."
+ },
+ {
+  "id": "nine-elms",
+  "name": "Nine Elms",
+  "lat": 51.47991,
+  "lon": -0.12848,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "Opened in 2021, it was part of the first major extension of the Underground since the Jubilee line reached Stratford in 1999."
+ },
+ {
+  "id": "north-acton",
+  "name": "North Acton",
+  "lat": 51.52352,
+  "lon": -0.25976,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "A third platform was added in 1992 so trains can turn back here when there is trouble elsewhere on the Central line."
+ },
+ {
+  "id": "north-ealing",
+  "name": "North Ealing",
+  "lat": 51.5175,
+  "lon": -0.28887,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "It was the only station on its branch not rebuilt in the 1930s, so it keeps its original Edwardian, faintly rural look."
+ },
+ {
+  "id": "north-greenwich",
+  "name": "North Greenwich",
+  "lat": 51.50047,
+  "lon": 0.00429,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "jubilee"
+  ],
+  "fact": "The deep blue tiles lining the cavernous interior were inspired by the colour-coded stations of the Hong Kong metro."
+ },
+ {
+  "id": "north-harrow",
+  "name": "North Harrow",
+  "lat": 51.58487,
+  "lon": -0.36241,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "metropolitan"
+  ],
+  "fact": "Trains had been running past this spot for 30 years before a station finally opened here in 1915."
+ },
+ {
+  "id": "north-wembley",
+  "name": "North Wembley",
+  "lat": 51.56255,
+  "lon": -0.304,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "bakerloo",
+   "lioness"
+  ],
+  "fact": "The station was going to be called East Lane, after the road crossing the railway, but opened in 1912 as North Wembley."
+ },
+ {
+  "id": "northfields",
+  "name": "Northfields",
+  "lat": 51.49932,
+  "lon": -0.31472,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "It opened in 1908 as Northfield (Ealing) and spent two decades under the name Northfields and Little Ealing."
+ },
+ {
+  "id": "northolt",
+  "name": "Northolt",
+  "lat": 51.54824,
+  "lon": -0.3687,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "A Great Western Railway halt stood just east of here from 1907 until the Central line arrived in 1948 and replaced it."
+ },
+ {
+  "id": "northwick-park",
+  "name": "Northwick Park",
+  "lat": 51.57848,
+  "lon": -0.31806,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "metropolitan"
+  ],
+  "fact": "The island platform holds one of the few surviving K8 telephone kiosks, which is Grade II listed in its own right."
+ },
+ {
+  "id": "northwood",
+  "name": "Northwood",
+  "lat": 51.61105,
+  "lon": -0.42383,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "metropolitan"
+  ],
+  "fact": "Two Metropolitan line trains collided in fog just outside the station on New Year's Eve 1945, killing three people."
+ },
+ {
+  "id": "northwood-hills",
+  "name": "Northwood Hills",
+  "lat": 51.60057,
+  "lon": -0.40946,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "metropolitan"
+  ],
+  "fact": "The station's name was picked in a competition, won by a woman from North Harrow before it opened in 1933."
+ },
+ {
+  "id": "norwood-junction",
+  "name": "Norwood Junction",
+  "lat": 51.39702,
+  "lon": -0.07522,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "windrush"
+  ],
+  "fact": "The world's first railway flyover was built just south of the station, carrying an experimental atmospheric line over the steam railway."
+ },
+ {
+  "id": "notting-hill-gate",
+  "name": "Notting Hill Gate",
+  "lat": 51.50913,
+  "lon": -0.1961,
+  "zones": [
+   1,
+   2
+  ],
+  "lines": [
+   "central",
+   "circle",
+   "district"
+  ],
+  "fact": "Refurbishment in 2010 uncovered a lift passage sealed up since 1959, its walls still covered in posters from the late 1950s."
+ },
+ {
+  "id": "oakwood",
+  "name": "Oakwood",
+  "lat": 51.64773,
+  "lon": -0.13218,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "The station opened in 1933 as Enfield West and did not take the name Oakwood until 1946."
+ },
+ {
+  "id": "old-street",
+  "name": "Old Street",
+  "lat": 51.52586,
+  "lon": -0.08777,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "The old surface building was swept away in 1968 and replaced by a ticket hall sunk into the middle of the roundabout."
+ },
+ {
+  "id": "osterley",
+  "name": "Osterley",
+  "lat": 51.48127,
+  "lon": -0.35222,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "A brick tower topped with a concrete obelisk marks the station, said to be inspired by a building Charles Holden saw in Amsterdam."
+ },
+ {
+  "id": "oval",
+  "name": "Oval",
+  "lat": 51.48185,
+  "lon": -0.11244,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "In 2004 staff here began chalking a daily thought from the Tao Te Ching on a whiteboard, and the habit spread to other stations."
+ },
+ {
+  "id": "oxford-circus",
+  "name": "Oxford Circus",
+  "lat": 51.51522,
+  "lon": -0.1419,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "bakerloo",
+   "central",
+   "victoria"
+  ],
+  "fact": "While the Victoria line was dug beneath it, traffic crossed the junction for five and a half years on a temporary steel deck nicknamed the umbrella."
+ },
+ {
+  "id": "paddington",
+  "name": "Paddington",
+  "lat": 51.51658,
+  "lon": -0.17569,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "bakerloo",
+   "circle",
+   "district",
+   "elizabeth",
+   "hammersmith-city"
+  ],
+  "fact": "Paddington Bear is named after the station, and a statue of him sits under the clock on platform 1."
+ },
+ {
+  "id": "park-royal",
+  "name": "Park Royal",
+  "lat": 51.52712,
+  "lon": -0.28434,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "The name comes from the Royal Agricultural Society's Park Royal show grounds, which the first station here was built to serve."
+ },
+ {
+  "id": "parsons-green",
+  "name": "Parsons Green",
+  "lat": 51.47528,
+  "lon": -0.20117,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "district"
+  ],
+  "fact": "The District Railway reached Parsons Green in 1880, with the station designed under the supervision of the engineer John Wolfe Barry."
+ },
+ {
+  "id": "peckham-rye",
+  "name": "Peckham Rye",
+  "lat": 51.47003,
+  "lon": -0.06941,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "windrush"
+  ],
+  "fact": "A Victorian waiting room above the concourse was bricked up for 55 years before being rediscovered and partly restored."
+ },
+ {
+  "id": "penge-west",
+  "name": "Penge West",
+  "lat": 51.41756,
+  "lon": -0.06084,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "windrush"
+  ],
+  "fact": "The first station here closed in 1841 for want of passengers, reopening in 1863 once crowds began heading for the Crystal Palace."
+ },
+ {
+  "id": "perivale",
+  "name": "Perivale",
+  "lat": 51.53672,
+  "lon": -0.32345,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "Designed in 1938, the station was held up by the Second World War and opened in 1947 without the tower its architect had planned."
+ },
+ {
+  "id": "piccadilly-circus",
+  "name": "Piccadilly Circus",
+  "lat": 51.51005,
+  "lon": -0.1338,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "bakerloo",
+   "piccadilly"
+  ],
+  "fact": "The Eros statue overhead was carted off to Victoria Embankment Gardens while the circular ticket hall was dug out beneath it."
+ },
+ {
+  "id": "pimlico",
+  "name": "Pimlico",
+  "lat": 51.4891,
+  "lon": -0.13376,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "victoria"
+  ],
+  "fact": "It is the only station on the Victoria line with no interchange to any other Underground or National Rail line."
+ },
+ {
+  "id": "pinner",
+  "name": "Pinner",
+  "lat": 51.5929,
+  "lon": -0.38116,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "metropolitan"
+  ],
+  "fact": "Houses built here during the Metro-land boom had to be worth at least £1,000, a higher bar than at Harrow-on-the-Hill."
+ },
+ {
+  "id": "plaistow",
+  "name": "Plaistow",
+  "lat": 51.53134,
+  "lon": 0.01745,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "district",
+   "hammersmith-city"
+  ],
+  "fact": "The station opened in 1858 on a new short cut the London, Tilbury and Southend Railway built from Fenchurch Street to Barking."
+ },
+ {
+  "id": "pontoon-dock",
+  "name": "Pontoon Dock",
+  "lat": 51.50221,
+  "lon": 0.03211,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "Opened in 2005, the station stands high enough to give views south across Thames Barrier Park to the Thames Barrier."
+ },
+ {
+  "id": "poplar",
+  "name": "Poplar",
+  "lat": 51.50774,
+  "lon": -0.01738,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "A third station called Poplar was built nearby in 1851 but never opened to passengers."
+ },
+ {
+  "id": "preston-road",
+  "name": "Preston Road",
+  "lat": 51.57197,
+  "lon": -0.29511,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "metropolitan"
+  ],
+  "fact": "It opened in 1908 as a halt serving the clay pigeon shooting events of that year's Olympic Games."
+ },
+ {
+  "id": "prince-regent",
+  "name": "Prince Regent",
+  "lat": 51.50926,
+  "lon": 0.03416,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "The station is named after Prince Regent Lane, laid out in 1811 and named for the man who became George IV."
+ },
+ {
+  "id": "pudding-mill-lane",
+  "name": "Pudding Mill Lane",
+  "lat": 51.5343,
+  "lon": -0.01276,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "Despite sitting right beside the Olympic Park, the station was closed throughout the 2012 Games because it was far too small for the crowds."
+ },
+ {
+  "id": "putney-bridge",
+  "name": "Putney Bridge",
+  "lat": 51.46826,
+  "lon": -0.20873,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "district"
+  ],
+  "fact": "Despite the name, the station is on the Fulham side of the Thames and is not actually in Putney."
+ },
+ {
+  "id": "queens-park",
+  "name": "Queen's Park",
+  "lat": 51.53416,
+  "lon": -0.20457,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "bakerloo",
+   "lioness"
+  ],
+  "fact": "The station opened in 1879 as Queen's Park (West Kilburn), and Bakerloo line trains did not reach it until 1915."
+ },
+ {
+  "id": "queens-road-peckham",
+  "name": "Queens Road Peckham",
+  "lat": 51.47357,
+  "lon": -0.05731,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "windrush"
+  ],
+  "fact": "Passenger trains to the East London line stopped running in 1911, and the link was not restored until London Overground reinstated it in 2012."
+ },
+ {
+  "id": "queensbury",
+  "name": "Queensbury",
+  "lat": 51.59419,
+  "lon": -0.28622,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "jubilee"
+  ],
+  "fact": "The name Queensbury was invented when the station opened in 1934, coined simply to match neighbouring Kingsbury."
+ },
+ {
+  "id": "queensway",
+  "name": "Queensway",
+  "lat": 51.51031,
+  "lon": -0.18715,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "Renamed from Queen's Road in 1946, the station keeps its 1900 building, given a flat roof so shops and offices could be built on top."
+ },
+ {
+  "id": "ravenscourt-park",
+  "name": "Ravenscourt Park",
+  "lat": 51.49412,
+  "lon": -0.23588,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "district"
+  ],
+  "fact": "The station opened in 1873 as Shaftesbury Road and was renamed in 1888, just before the nearby park opened to the public."
+ },
+ {
+  "id": "rayners-lane",
+  "name": "Rayners Lane",
+  "lat": 51.57515,
+  "lon": -0.37113,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "metropolitan",
+   "piccadilly"
+  ],
+  "fact": "Named after a local farmer, Daniel Rayner, the exposed halt here was once nicknamed Pneumonia Junction."
+ },
+ {
+  "id": "reading",
+  "name": "Reading",
+  "lat": 51.45879,
+  "lon": -0.97186,
+  "zones": null,
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "Opened in 1840 as the temporary western terminus of the Great Western Railway, the station was rebuilt for £897 million and reopened in 2014."
+ },
+ {
+  "id": "rectory-road",
+  "name": "Rectory Road",
+  "lat": 51.5585,
+  "lon": -0.06827,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "weaver"
+  ],
+  "fact": "The ticket office, street buildings, staircases and platform shelters all date from mid-1980s works funded by the Greater London Council."
+ },
+ {
+  "id": "redbridge",
+  "name": "Redbridge",
+  "lat": 51.57624,
+  "lon": 0.04536,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "The tunnels here were used by the Plessey company as an aircraft parts factory from 1942 to 1945, before the station ever opened to passengers."
+ },
+ {
+  "id": "regents-park",
+  "name": "Regent's Park",
+  "lat": 51.52334,
+  "lon": -0.14644,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "bakerloo"
+  ],
+  "fact": "The station has no building at street level at all, and is reached only by a subway from the pavement."
+ },
+ {
+  "id": "richmond",
+  "name": "Richmond",
+  "lat": 51.46324,
+  "lon": -0.30134,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "district",
+   "mildmay"
+  ],
+  "fact": "The Art Deco station building dates from 1937 and was designed by Southern Railway's chief architect James Robb Scott, in Portland stone."
+ },
+ {
+  "id": "rickmansworth",
+  "name": "Rickmansworth",
+  "lat": 51.64021,
+  "lon": -0.4737,
+  "zones": [
+   7
+  ],
+  "lines": [
+   "metropolitan"
+  ],
+  "fact": "From 1925 this was the point where Metropolitan line trains swapped their electric locomotive for a steam one to continue north."
+ },
+ {
+  "id": "roding-valley",
+  "name": "Roding Valley",
+  "lat": 51.6172,
+  "lon": 0.04365,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "It is the least used station on the London Underground, with around 170,000 passenger journeys in 2024."
+ },
+ {
+  "id": "romford",
+  "name": "Romford",
+  "lat": 51.57483,
+  "lon": 0.18324,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "elizabeth",
+   "liberty"
+  ],
+  "fact": "The Upminster branch had its own separate station at Romford until 1934, because the Great Eastern Railway refused to share."
+ },
+ {
+  "id": "rotherhithe",
+  "name": "Rotherhithe",
+  "lat": 51.50082,
+  "lon": -0.05205,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "windrush"
+  ],
+  "fact": "The platforms sit at the southern end of the Brunels' 1843 Thames Tunnel, and its original brickwork is visible from the platform end."
+ },
+ {
+  "id": "royal-albert",
+  "name": "Royal Albert",
+  "lat": 51.50836,
+  "lon": 0.04593,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "It stands further from the nearest houses than any other station on the DLR."
+ },
+ {
+  "id": "royal-oak",
+  "name": "Royal Oak",
+  "lat": 51.51911,
+  "lon": -0.18875,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "circle",
+   "hammersmith-city"
+  ],
+  "fact": "The station is named after a nearby pub, The Royal Oak, which has since been renamed The Porchester."
+ },
+ {
+  "id": "royal-victoria",
+  "name": "Royal Victoria",
+  "lat": 51.50934,
+  "lon": 0.0185,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "The line through the station dates from 1855, when the Eastern Counties Railway was forced to divert around the newly opened Royal Victoria Dock."
+ },
+ {
+  "id": "ruislip",
+  "name": "Ruislip",
+  "lat": 51.57135,
+  "lon": -0.4219,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "metropolitan",
+   "piccadilly"
+  ],
+  "fact": "When the line from Harrow-on-the-Hill to Uxbridge opened in 1904, Ruislip was its only intermediate stop."
+ },
+ {
+  "id": "ruislip-gardens",
+  "name": "Ruislip Gardens",
+  "lat": 51.56074,
+  "lon": -0.41071,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "Trains had been running past this spot since 1906, but no station was built here until 1934."
+ },
+ {
+  "id": "ruislip-manor",
+  "name": "Ruislip Manor",
+  "lat": 51.5732,
+  "lon": -0.41297,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "metropolitan",
+   "piccadilly"
+  ],
+  "fact": "Passenger numbers here rose from 17,000 in 1931 to 1.25 million in 1937 as the suburb around the station was built."
+ },
+ {
+  "id": "russell-square",
+  "name": "Russell Square",
+  "lat": 51.52307,
+  "lon": -0.12429,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "The station has no escalators, so the alternative to its lifts is a spiral staircase of 176 steps."
+ },
+ {
+  "id": "seven-kings",
+  "name": "Seven Kings",
+  "lat": 51.56403,
+  "lon": 0.0971,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "The platforms are too short for the Elizabeth line's nine-carriage trains, so one carriage's doors are kept shut."
+ },
+ {
+  "id": "seven-sisters",
+  "name": "Seven Sisters",
+  "lat": 51.58333,
+  "lon": -0.07258,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "victoria",
+   "weaver"
+  ],
+  "fact": "The name comes from seven elm trees planted in a circle around a walnut tree on Page Green, known as the Seven Sisters by 1732."
+ },
+ {
+  "id": "shadwell",
+  "name": "Shadwell",
+  "lat": 51.51169,
+  "lon": -0.05664,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "dlr",
+   "windrush"
+  ],
+  "fact": "The station was shut from 1995 to 1998 while the Thames Tunnel its trains run through was repaired.",
+  "outOfStationInterchange": true
+ },
+ {
+  "id": "shenfield",
+  "name": "Shenfield",
+  "lat": 51.63088,
+  "lon": 0.32985,
+  "zones": null,
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "The station opened in 1843, closed in 1850 because too few people used it, and did not reopen until 1887."
+ },
+ {
+  "id": "shepherds-bush",
+  "name": "Shepherd's Bush",
+  "lat": 51.50438,
+  "lon": -0.21881,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "central",
+   "mildmay"
+  ],
+  "fact": "It was the original western terminus of the Central London Railway when the line opened in 1900.",
+  "outOfStationInterchange": true
+ },
+ {
+  "id": "shepherds-bush-market",
+  "name": "Shepherd's Bush Market",
+  "lat": 51.50558,
+  "lon": -0.22637,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "circle",
+   "hammersmith-city"
+  ],
+  "fact": "It was called simply Shepherd's Bush until 2008, when it was renamed to avoid confusion with the other nearby station of that name."
+ },
+ {
+  "id": "shoreditch-high-street",
+  "name": "Shoreditch High Street",
+  "lat": 51.52338,
+  "lon": -0.07525,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "windrush"
+  ],
+  "fact": "The station is sealed inside a concrete box raised on supports, so that the site around and above it can be built over later."
+ },
+ {
+  "id": "silver-street",
+  "name": "Silver Street",
+  "lat": 51.61469,
+  "lon": -0.06724,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "weaver"
+  ],
+  "fact": "In the 1990s the Fore Street tunnel of the North Circular Road was built directly beneath the station without any disruption to services."
+ },
+ {
+  "id": "sloane-square",
+  "name": "Sloane Square",
+  "lat": 51.49227,
+  "lon": -0.15638,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "circle",
+   "district"
+  ],
+  "fact": "The River Westbourne is carried straight over the platforms in a large iron pipe, still slung from girders above the tracks."
+ },
+ {
+  "id": "slough",
+  "name": "Slough",
+  "lat": 51.51188,
+  "lon": -0.59151,
+  "zones": null,
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "The arrival of the railway here led to Queen Victoria's first ever train journey, from Slough towards Paddington in 1842."
+ },
+ {
+  "id": "snaresbrook",
+  "name": "Snaresbrook",
+  "lat": 51.58068,
+  "lon": 0.02144,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "Opened by the Eastern Counties Railway in 1856, it keeps its Victorian brick building and cast iron and timber platform canopies."
+ },
+ {
+  "id": "south-acton",
+  "name": "South Acton",
+  "lat": 51.4997,
+  "lon": -0.27016,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "mildmay"
+  ],
+  "fact": "Until 1959 the station was also served by London Underground District line trains, on a short branch from Acton Town."
+ },
+ {
+  "id": "south-ealing",
+  "name": "South Ealing",
+  "lat": 51.501,
+  "lon": -0.30742,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "The station opened on the District Railway in 1883, but District line trains were withdrawn in 1964, leaving only the Piccadilly line."
+ },
+ {
+  "id": "south-hampstead",
+  "name": "South Hampstead",
+  "lat": 51.54143,
+  "lon": -0.17888,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "lioness"
+  ],
+  "fact": "The station opened in 1879 as Loudon Road and did not take its present name until 1922."
+ },
+ {
+  "id": "south-harrow",
+  "name": "South Harrow",
+  "lat": 51.56489,
+  "lon": -0.35249,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "In 1903 the line here became the first stretch of the Underground's surface railways to run electric trains instead of steam."
+ },
+ {
+  "id": "south-kensington",
+  "name": "South Kensington",
+  "lat": 51.49409,
+  "lon": -0.17414,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "circle",
+   "district",
+   "piccadilly"
+  ],
+  "fact": "It is the busiest station on the whole Underground without step-free access."
+ },
+ {
+  "id": "south-kenton",
+  "name": "South Kenton",
+  "lat": 51.57023,
+  "lon": -0.30843,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "bakerloo",
+   "lioness"
+  ],
+  "fact": "It is one of only three stations served by London Underground that has no ticket gates at all."
+ },
+ {
+  "id": "south-quay",
+  "name": "South Quay",
+  "lat": 51.50005,
+  "lon": -0.01613,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "The whole station was rebuilt 125 metres to the east in 2009, because sharp curves made the old one impossible to lengthen."
+ },
+ {
+  "id": "south-ruislip",
+  "name": "South Ruislip",
+  "lat": 51.55685,
+  "lon": -0.39892,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "The frieze of concrete, glass and granite chippings in the booking hall is one of the earliest public works by the glass artist Henry Haig."
+ },
+ {
+  "id": "south-tottenham",
+  "name": "South Tottenham",
+  "lat": 51.58037,
+  "lon": -0.0721,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "suffragette"
+  ],
+  "fact": "The station opened in 1871 as South Tottenham and Stamford Hill, and only lost the second half of its name in 1949."
+ },
+ {
+  "id": "south-wimbledon",
+  "name": "South Wimbledon",
+  "lat": 51.41531,
+  "lon": -0.19201,
+  "zones": [
+   3,
+   4
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "On the original plans the station was going to be called Merton Grove."
+ },
+ {
+  "id": "south-woodford",
+  "name": "South Woodford",
+  "lat": 51.59191,
+  "lon": 0.02734,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "The station was called George Lane until 1937, then South Woodford (George Lane) until the brackets were dropped in 1947."
+ },
+ {
+  "id": "southall",
+  "name": "Southall",
+  "lat": 51.50596,
+  "lon": -0.37861,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "The platform signs give the station's name in Gurmukhi script as well as English, reflecting the area's Punjabi community."
+ },
+ {
+  "id": "southbury",
+  "name": "Southbury",
+  "lat": 51.6487,
+  "lon": -0.05244,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "weaver"
+  ],
+  "fact": "The station opened as Churchbury in 1891, closed twice, and only reopened under its present name in 1960."
+ },
+ {
+  "id": "southfields",
+  "name": "Southfields",
+  "lat": 51.44507,
+  "lon": -0.2066,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "district"
+  ],
+  "fact": "During the Wimbledon Championships more than three times the usual number of passengers pass through the station."
+ },
+ {
+  "id": "southgate",
+  "name": "Southgate",
+  "lat": 51.63231,
+  "lon": -0.12782,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "Charles Holden's station is topped by an illuminated feature designed to look as though it came from Frankenstein's laboratory."
+ },
+ {
+  "id": "southwark",
+  "name": "Southwark",
+  "lat": 51.50427,
+  "lon": -0.10533,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "jubilee"
+  ],
+  "fact": "One wall of the station is made from 660 specially cut pieces of blue glass, designed by the artist Alexander Beleschenko."
+ },
+ {
+  "id": "st-james-street",
+  "name": "St James Street",
+  "lat": 51.58098,
+  "lon": -0.03292,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "weaver"
+  ],
+  "fact": "A separate staircase once let passengers reach the platform without entering the station, until it was closed in 2015 to enforce ticket barriers."
+ },
+ {
+  "id": "st-jamess-park",
+  "name": "St. James's Park",
+  "lat": 51.49954,
+  "lon": -0.13361,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "circle",
+   "district"
+  ],
+  "fact": "The station sits inside 55 Broadway, the old Underground headquarters, which carries carvings by Jacob Epstein, Eric Gill and Henry Moore."
+ },
+ {
+  "id": "st-johns-wood",
+  "name": "St. John's Wood",
+  "lat": 51.53452,
+  "lon": -0.17395,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "jubilee"
+  ],
+  "fact": "It is the only Underground station whose name contains none of the letters in the word mackerel."
+ },
+ {
+  "id": "st-pauls",
+  "name": "St. Paul's",
+  "lat": 51.51494,
+  "lon": -0.09757,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "The station opened in 1900 under the name Post Office, and only became St. Paul's in 1937."
+ },
+ {
+  "id": "stamford-brook",
+  "name": "Stamford Brook",
+  "lat": 51.49492,
+  "lon": -0.2457,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "district"
+  ],
+  "fact": "In 1964 it became the first station anywhere on the Underground to be fitted with an automatic ticket barrier."
+ },
+ {
+  "id": "stamford-hill",
+  "name": "Stamford Hill",
+  "lat": 51.57447,
+  "lon": -0.07668,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "weaver"
+  ],
+  "fact": "The ticket hall stands in the London Borough of Hackney, but much of the platform area is in Haringey."
+ },
+ {
+  "id": "stanmore",
+  "name": "Stanmore",
+  "lat": 51.61984,
+  "lon": -0.30327,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "jubilee"
+  ],
+  "fact": "When it opened, the Metropolitan Railway's trains here competed with a rival service from Stanmore Village station about a kilometre away."
+ },
+ {
+  "id": "star-lane",
+  "name": "Star Lane",
+  "lat": 51.52079,
+  "lon": 0.00416,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "The station stands on the route of the Eastern Counties and Thames Junction Railway, open between Stratford and Canning Town since 1846."
+ },
+ {
+  "id": "stepney-green",
+  "name": "Stepney Green",
+  "lat": 51.52186,
+  "lon": -0.0466,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "district",
+   "hammersmith-city"
+  ],
+  "fact": "The leftmost bay of the 1902 street frontage was a parcel office, bombed and demolished during the Second World War."
+ },
+ {
+  "id": "stockwell",
+  "name": "Stockwell",
+  "lat": 51.47218,
+  "lon": -0.12264,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "northern",
+   "victoria"
+  ],
+  "fact": "It opened in 1890 as the southern terminus of the City and South London Railway, London's first successful deep-level tube."
+ },
+ {
+  "id": "stoke-newington",
+  "name": "Stoke Newington",
+  "lat": 51.56523,
+  "lon": -0.07289,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "weaver"
+  ],
+  "fact": "The station opened in 1872 but only appeared on the Tube map in 2015, when London Overground took it over."
+ },
+ {
+  "id": "stonebridge-park",
+  "name": "Stonebridge Park",
+  "lat": 51.54396,
+  "lon": -0.27589,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "bakerloo",
+   "lioness"
+  ],
+  "fact": "The original station was destroyed by bombing in the Second World War, and the buildings standing today date from 1948."
+ },
+ {
+  "id": "stratford",
+  "name": "Stratford",
+  "lat": 51.54181,
+  "lon": -0.00346,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "central",
+   "dlr",
+   "elizabeth",
+   "jubilee",
+   "mildmay"
+  ],
+  "fact": "With 19 platforms, it is the busiest station on the London Underground network outside Zone 1."
+ },
+ {
+  "id": "stratford-high-street",
+  "name": "Stratford High Street",
+  "lat": 51.5382,
+  "lon": -0.00108,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "A station here closed in 1957 for lack of passengers, and the site went 54 years without one until the DLR arrived in 2011."
+ },
+ {
+  "id": "stratford-international",
+  "name": "Stratford International",
+  "lat": 51.54527,
+  "lon": -0.00964,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "Despite the name, no international services have ever called here: the planned Eurostar stops never happened."
+ },
+ {
+  "id": "sudbury-hill",
+  "name": "Sudbury Hill",
+  "lat": 51.55695,
+  "lon": -0.33643,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "Charles Holden's brick, concrete and glass station building was made a Grade II listed building in 1994."
+ },
+ {
+  "id": "sudbury-town",
+  "name": "Sudbury Town",
+  "lat": 51.55082,
+  "lon": -0.31574,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "Charles Holden's brick box of a station, capped with a flat concrete slab roof, is a Grade II* listed building."
+ },
+ {
+  "id": "surrey-quays",
+  "name": "Surrey Quays",
+  "lat": 51.4932,
+  "lon": -0.04752,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "windrush"
+  ],
+  "fact": "The station opened in 1869 as Deptford Road, became Surrey Docks in 1911, and was renamed again in 1989 after a shopping centre."
+ },
+ {
+  "id": "swiss-cottage",
+  "name": "Swiss Cottage",
+  "lat": 51.54368,
+  "lon": -0.17489,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "jubilee"
+  ],
+  "fact": "The station is named after a nearby pub built in 1803, originally called The Swiss Tavern."
+ },
+ {
+  "id": "sydenham",
+  "name": "Sydenham",
+  "lat": 51.42725,
+  "lon": -0.05424,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "windrush"
+  ],
+  "fact": "The railway here runs along the bed of the Croydon Canal, which in 1836 became the first canal abandoned by an Act of Parliament."
+ },
+ {
+  "id": "taplow",
+  "name": "Taplow",
+  "lat": 51.52356,
+  "lon": -0.68137,
+  "zones": null,
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "The station is unusually large and grand for the number of people it serves because several major Great Western Railway shareholders lived nearby."
+ },
+ {
+  "id": "temple",
+  "name": "Temple",
+  "lat": 51.51101,
+  "lon": -0.11426,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "circle",
+   "district"
+  ],
+  "fact": "Local property owners insisted the station building stay a single storey, and its roof is now an open-air gallery called The Artist's Garden."
+ },
+ {
+  "id": "theobalds-grove",
+  "name": "Theobalds Grove",
+  "lat": 51.69246,
+  "lon": -0.03483,
+  "zones": [
+   7
+  ],
+  "lines": [
+   "weaver"
+  ],
+  "fact": "Named after the grounds of Theobalds Palace, the station closed twice, in 1909 and 1919, before reopening for good in 1960."
+ },
+ {
+  "id": "theydon-bois",
+  "name": "Theydon Bois",
+  "lat": 51.67176,
+  "lon": 0.10308,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "The station opened in April 1865 as plain Theydon and only gained the Bois part of its name that December."
+ },
+ {
+  "id": "tooting-bec",
+  "name": "Tooting Bec",
+  "lat": 51.43568,
+  "lon": -0.15974,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "Designed by Charles Holden, the station was called Trinity Road (Tooting Bec) until 1950 and is now Grade II listed."
+ },
+ {
+  "id": "tooting-broadway",
+  "name": "Tooting Broadway",
+  "lat": 51.42763,
+  "lon": -0.16837,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "The station was Charles Holden's first major project for the Underground, fronted by a double-height curving screen of white Portland stone."
+ },
+ {
+  "id": "tottenham-court-road",
+  "name": "Tottenham Court Road",
+  "lat": 51.51643,
+  "lon": -0.13041,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "central",
+   "elizabeth",
+   "northern"
+  ],
+  "fact": "The Northern line platforms opened in 1907 as Oxford Street station, while the station now called Goodge Street was then Tottenham Court Road."
+ },
+ {
+  "id": "tottenham-hale",
+  "name": "Tottenham Hale",
+  "lat": 51.58811,
+  "lon": -0.06024,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "victoria"
+  ],
+  "fact": "Until 1868 cattle from East Anglia were unloaded here and driven on foot towards London down what is now the A10."
+ },
+ {
+  "id": "totteridge-and-whetstone",
+  "name": "Totteridge & Whetstone",
+  "lat": 51.6306,
+  "lon": -0.17921,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "Opened in 1872, the station spent nearly 70 years as a main-line stop before the Northern line took it over in 1940."
+ },
+ {
+  "id": "tower-gateway",
+  "name": "Tower Gateway",
+  "lat": 51.51062,
+  "lon": -0.07482,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "The DLR's original terminus was built on the site of a vanished railway station called Minories."
+ },
+ {
+  "id": "tower-hill",
+  "name": "Tower Hill",
+  "lat": 51.50997,
+  "lon": -0.07655,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "circle",
+   "district"
+  ],
+  "fact": "A section of the Roman city wall is visible above the track at the far eastern end of the westbound platform."
+ },
+ {
+  "id": "tufnell-park",
+  "name": "Tufnell Park",
+  "lat": 51.55682,
+  "lon": -0.13843,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "The station has lifts rather than escalators, and its southbound platform sits at a lower level than the northbound one."
+ },
+ {
+  "id": "turkey-street",
+  "name": "Turkey Street",
+  "lat": 51.67263,
+  "lon": -0.04722,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "weaver"
+  ],
+  "fact": "The station opened in 1891 as Forty Hill and only took the name Turkey Street when it reopened in 1960."
+ },
+ {
+  "id": "turnham-green",
+  "name": "Turnham Green",
+  "lat": 51.49515,
+  "lon": -0.25455,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "district",
+   "piccadilly"
+  ],
+  "fact": "Piccadilly line trains only stop here early in the morning and after 22:30, running straight through for the rest of the day."
+ },
+ {
+  "id": "turnpike-lane",
+  "name": "Turnpike Lane",
+  "lat": 51.59027,
+  "lon": -0.10295,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "Charles Holden gave the station a huge brick ticket hall half-sunk into the ground; the names North Harringay and Ducketts Green were considered first."
+ },
+ {
+  "id": "twyford",
+  "name": "Twyford",
+  "lat": 51.47553,
+  "lon": -0.86329,
+  "zones": null,
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "For nine months from 1839 this was the end of the Great Western Railway, while Sonning Cutting was still being dug."
+ },
+ {
+  "id": "upminster",
+  "name": "Upminster",
+  "lat": 51.55906,
+  "lon": 0.25088,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "district",
+   "liberty"
+  ],
+  "fact": "The easternmost station on the Underground network, its Victorian platform buildings were originally designed for Hornchurch."
+ },
+ {
+  "id": "upminster-bridge",
+  "name": "Upminster Bridge",
+  "lat": 51.55856,
+  "lon": 0.23581,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "district"
+  ],
+  "fact": "The ticket hall floor is tiled with a reversed swastika, a popular decorative pattern at the time the station was built."
+ },
+ {
+  "id": "upney",
+  "name": "Upney",
+  "lat": 51.53837,
+  "lon": 0.10153,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "district"
+  ],
+  "fact": "The station opened in 1932 to serve the vast new Becontree estate and takes its name from Upney Lane in Barking."
+ },
+ {
+  "id": "upper-holloway",
+  "name": "Upper Holloway",
+  "lat": 51.56363,
+  "lon": -0.12951,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "suffragette"
+  ],
+  "fact": "The line through here opened in 1868 but did so badly that services stopped completely in January 1870 and had to be revived."
+ },
+ {
+  "id": "upton-park",
+  "name": "Upton Park",
+  "lat": 51.53534,
+  "lon": 0.03526,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "district",
+   "hammersmith-city"
+  ],
+  "fact": "It was the first station on the London, Tilbury and Southend Railway built by a property developer, who was also building the housing estate around it."
+ },
+ {
+  "id": "uxbridge",
+  "name": "Uxbridge",
+  "lat": 51.54657,
+  "lon": -0.47795,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "metropolitan",
+   "piccadilly"
+  ],
+  "fact": "Charles Holden's 1938 station has stained glass by Erwin Bossanyi and stone winged wheels by Joseph Armitage above the entrance."
+ },
+ {
+  "id": "vauxhall",
+  "name": "Vauxhall",
+  "lat": 51.48574,
+  "lon": -0.1242,
+  "zones": [
+   1,
+   2
+  ],
+  "lines": [
+   "victoria"
+  ],
+  "fact": "A popular theory holds that the Russian word for a railway station, vokzal, comes from the name Vauxhall."
+ },
+ {
+  "id": "victoria",
+  "name": "Victoria",
+  "lat": 51.49636,
+  "lon": -0.1431,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "circle",
+   "district",
+   "victoria"
+  ],
+  "fact": "Victoria has seen more visits from royalty and heads of state than any other London station, and the Unknown Warrior arrived here in 1920."
+ },
+ {
+  "id": "walthamstow-central",
+  "name": "Walthamstow Central",
+  "lat": 51.58297,
+  "lon": -0.01988,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "victoria",
+   "weaver"
+  ],
+  "fact": "It is the nearest station to Walthamstow Market, the longest outdoor market in Europe.",
+  "outOfStationInterchange": true
+ },
+ {
+  "id": "walthamstow-queens-road",
+  "name": "Walthamstow Queens Road",
+  "lat": 51.5815,
+  "lon": -0.02385,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "suffragette"
+  ],
+  "fact": "The station was simply called Walthamstow when it opened in 1894 and only gained the Queen's Road part of its name in 1968."
+ },
+ {
+  "id": "wandsworth-road",
+  "name": "Wandsworth Road",
+  "lat": 51.47022,
+  "lon": -0.13852,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "windrush"
+  ],
+  "fact": "The station opened in 1863 on the London, Chatham and Dover Railway, whose line through it closed in 1916."
+ },
+ {
+  "id": "wanstead",
+  "name": "Wanstead",
+  "lat": 51.5755,
+  "lon": 0.02853,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "The unfinished tunnels east of the station were used as a secret Plessey munitions factory between 1942 and 1945."
+ },
+ {
+  "id": "wanstead-park",
+  "name": "Wanstead Park",
+  "lat": 51.55169,
+  "lon": 0.02621,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "suffragette"
+  ],
+  "fact": "Despite the name, the station is in Forest Gate and stands near Wanstead Flats rather than Wanstead Park."
+ },
+ {
+  "id": "wapping",
+  "name": "Wapping",
+  "lat": 51.50439,
+  "lon": -0.05593,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "windrush"
+  ],
+  "fact": "The station sits at the north end of Marc Brunel's Thames Tunnel, and passengers reach the platforms through one of its original access shafts."
+ },
+ {
+  "id": "warren-street",
+  "name": "Warren Street",
+  "lat": 51.52495,
+  "lon": -0.13832,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "northern",
+   "victoria"
+  ],
+  "fact": "The Victoria line platforms were originally tiled with a maze, a visual pun on the word warren."
+ },
+ {
+  "id": "warwick-avenue",
+  "name": "Warwick Avenue",
+  "lat": 51.52326,
+  "lon": -0.18378,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "bakerloo"
+  ],
+  "fact": "The station has no building at street level and was one of the first on the Underground designed for escalators rather than lifts."
+ },
+ {
+  "id": "waterloo",
+  "name": "Waterloo",
+  "lat": 51.5033,
+  "lon": -0.11478,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "bakerloo",
+   "jubilee",
+   "northern",
+   "waterloo-city"
+  ],
+  "fact": "The London Necropolis Company ran a private funeral station inside Waterloo, carrying coffins and mourners to Brookwood Cemetery."
+ },
+ {
+  "id": "watford",
+  "name": "Watford",
+  "lat": 51.65745,
+  "lon": -0.41738,
+  "zones": [
+   7
+  ],
+  "lines": [
+   "metropolitan"
+  ],
+  "fact": "The Metropolitan Railway meant to push on into the town centre but never did, leaving the station about a mile from Watford High Street."
+ },
+ {
+  "id": "watford-high-street",
+  "name": "Watford High Street",
+  "lat": 51.65266,
+  "lon": -0.39171,
+  "zones": [
+   8
+  ],
+  "lines": [
+   "lioness"
+  ],
+  "fact": "Bakerloo line trains called here from 1917 until the Underground service was withdrawn in September 1982."
+ },
+ {
+  "id": "watford-junction",
+  "name": "Watford Junction",
+  "lat": 51.66353,
+  "lon": -0.39652,
+  "zones": null,
+  "lines": [
+   "lioness"
+  ],
+  "fact": "The phrase north of Watford is said to come from this station being the last urban stop on the main line out of London."
+ },
+ {
+  "id": "wembley-central",
+  "name": "Wembley Central",
+  "lat": 51.5523,
+  "lon": -0.29685,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "bakerloo",
+   "lioness"
+  ],
+  "fact": "The station opened in 1842 as Sudbury and went through three more names before settling on Wembley Central in 1948."
+ },
+ {
+  "id": "wembley-park",
+  "name": "Wembley Park",
+  "lat": 51.5632,
+  "lon": -0.27926,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "jubilee",
+   "metropolitan"
+  ],
+  "fact": "The station was built to serve Watkin's Tower, a 1,200ft rival to the Eiffel Tower that was never finished and was demolished in 1904."
+ },
+ {
+  "id": "west-acton",
+  "name": "West Acton",
+  "lat": 51.518,
+  "lon": -0.28098,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "A Grade II listed building by Great Western Railway architect Brian Lewis, it is the only intermediate stop on the Ealing Broadway branch."
+ },
+ {
+  "id": "west-brompton",
+  "name": "West Brompton",
+  "lat": 51.48727,
+  "lon": -0.1956,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "district",
+   "mildmay"
+  ],
+  "fact": "The main line platforms closed in 1940 and did not reopen until 1999, when transport minister Glenda Jackson did the honours."
+ },
+ {
+  "id": "west-croydon",
+  "name": "West Croydon",
+  "lat": 51.37843,
+  "lon": -0.10258,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "windrush"
+  ],
+  "fact": "The station opened as plain Croydon in 1839 and was only renamed West Croydon in 1851."
+ },
+ {
+  "id": "west-drayton",
+  "name": "West Drayton",
+  "lat": 51.51006,
+  "lon": -0.47223,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "District Railway trains from Mansion House called here on their way to Windsor between 1883 and 1885, until the service was dropped as uneconomic."
+ },
+ {
+  "id": "west-ealing",
+  "name": "West Ealing",
+  "lat": 51.51351,
+  "lon": -0.32013,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "The station opened in 1871 as Castle Hill, became Castle Hill Ealing Dean in 1875, and only took the name West Ealing in 1899."
+ },
+ {
+  "id": "west-finchley",
+  "name": "West Finchley",
+  "lat": 51.60943,
+  "lon": -0.18836,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "The station's footbridge is said to have been brought here second-hand from a Yorkshire colliery railway that closed in 1930."
+ },
+ {
+  "id": "west-ham",
+  "name": "West Ham",
+  "lat": 51.52814,
+  "lon": 0.00505,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "district",
+   "dlr",
+   "hammersmith-city",
+   "jubilee"
+  ],
+  "fact": "The station was built at the request of Arnold Hills, whose Thames Ironworks football team went on to become West Ham United."
+ },
+ {
+  "id": "west-hampstead",
+  "name": "West Hampstead",
+  "lat": 51.54664,
+  "lon": -0.19106,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "jubilee",
+   "mildmay"
+  ],
+  "fact": "Metropolitan line trains rush past on their own tracks either side of the Jubilee line platforms without stopping.",
+  "outOfStationInterchange": true
+ },
+ {
+  "id": "west-harrow",
+  "name": "West Harrow",
+  "lat": 51.57971,
+  "lon": -0.3534,
+  "zones": [
+   5
+  ],
+  "lines": [
+   "metropolitan"
+  ],
+  "fact": "Trains ran past the site for nine years before the station opened in 1913, and one of its entrances still has no ticket barriers."
+ },
+ {
+  "id": "west-india-quay",
+  "name": "West India Quay",
+  "lat": 51.50703,
+  "lon": -0.02031,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "Just 199 metres separate it from Canary Wharf DLR, the shortest gap between any two stations on the Underground and DLR network."
+ },
+ {
+  "id": "west-kensington",
+  "name": "West Kensington",
+  "lat": 51.49046,
+  "lon": -0.20664,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "district"
+  ],
+  "fact": "The station opened in 1874 as North End (Fulham) and, despite its name, stands in Hammersmith and Fulham rather than Kensington."
+ },
+ {
+  "id": "west-ruislip",
+  "name": "West Ruislip",
+  "lat": 51.56969,
+  "lon": -0.43789,
+  "zones": [
+   6
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "The Central line was meant to carry on westwards from here, with the next station at Harefield Road, until the Green Belt stopped it."
+ },
+ {
+  "id": "west-silvertown",
+  "name": "West Silvertown",
+  "lat": 51.50284,
+  "lon": 0.02246,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "The station opened in 2005 on the DLR's branch to King George V, built to serve Britannia Village."
+ },
+ {
+  "id": "westbourne-park",
+  "name": "Westbourne Park",
+  "lat": 51.52111,
+  "lon": -0.20106,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "circle",
+   "hammersmith-city"
+  ],
+  "fact": "A bomb planted by suffragettes was discovered at the station on 16 May 1913."
+ },
+ {
+  "id": "westferry",
+  "name": "Westferry",
+  "lat": 51.50943,
+  "lon": -0.02675,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "The station is named after Westferry Road, but there was never a west ferry: the crossing was at the southern tip of the Isle of Dogs."
+ },
+ {
+  "id": "westminster",
+  "name": "Westminster",
+  "lat": 51.50132,
+  "lon": -0.12486,
+  "zones": [
+   1
+  ],
+  "lines": [
+   "circle",
+   "district",
+   "jubilee"
+  ],
+  "fact": "Building the Jubilee line here meant digging a 39-metre void next to Big Ben, the deepest excavation ever made in central London."
+ },
+ {
+  "id": "white-city",
+  "name": "White City",
+  "lat": 51.51196,
+  "lon": -0.2243,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "Trains run on the right through the station rather than the left, a legacy of the tunnels built for the old Wood Lane station."
+ },
+ {
+  "id": "white-hart-lane",
+  "name": "White Hart Lane",
+  "lat": 51.60504,
+  "lon": -0.07091,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "weaver"
+  ],
+  "fact": "The station opened on White Hart Lane in 1872, 27 years before the football ground that took its name from the same road."
+ },
+ {
+  "id": "whitechapel",
+  "name": "Whitechapel",
+  "lat": 51.51952,
+  "lon": -0.05997,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "district",
+   "elizabeth",
+   "hammersmith-city",
+   "windrush"
+  ],
+  "fact": "The Whitechapel Road entrance is the original 1876 East London Railway frontage, a three-storey building unlike any other on that line."
+ },
+ {
+  "id": "willesden-green",
+  "name": "Willesden Green",
+  "lat": 51.54915,
+  "lon": -0.22154,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "jubilee",
+   "metropolitan"
+  ],
+  "fact": "The ticket hall keeps rare original green mosaic tiling from Charles Walter Clark's 1925 rebuild, and the station is Grade II listed."
+ },
+ {
+  "id": "willesden-junction",
+  "name": "Willesden Junction",
+  "lat": 51.53226,
+  "lon": -0.24428,
+  "zones": [
+   2,
+   3
+  ],
+  "lines": [
+   "bakerloo",
+   "lioness",
+   "mildmay"
+  ],
+  "fact": "Victorians nicknamed it Bewildering Junction because of its maze of entrances, passages and platforms."
+ },
+ {
+  "id": "wimbledon",
+  "name": "Wimbledon",
+  "lat": 51.42121,
+  "lon": -0.20657,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "district"
+  ],
+  "fact": "An Airedale terrier called Laddie collected over £5,000 for charity at the station and was later stuffed and displayed on the platform."
+ },
+ {
+  "id": "wimbledon-park",
+  "name": "Wimbledon Park",
+  "lat": 51.43457,
+  "lon": -0.19972,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "district"
+  ],
+  "fact": "The stretch of line through here was the last part of the District to swap steam trains for electric ones, in August 1905."
+ },
+ {
+  "id": "wood-green",
+  "name": "Wood Green",
+  "lat": 51.59748,
+  "lon": -0.10989,
+  "zones": [
+   3
+  ],
+  "lines": [
+   "piccadilly"
+  ],
+  "fact": "Charles Holden's 1932 station was nearly called Lordship Lane, and every station from Turnpike Lane to Cockfosters is now listed."
+ },
+ {
+  "id": "wood-lane",
+  "name": "Wood Lane",
+  "lat": 51.50967,
+  "lon": -0.22453,
+  "zones": [
+   2
+  ],
+  "lines": [
+   "circle",
+   "hammersmith-city"
+  ],
+  "fact": "Opened in 2008, it was the first station built on an existing Tube line in more than 70 years."
+ },
+ {
+  "id": "wood-street",
+  "name": "Wood Street",
+  "lat": 51.58658,
+  "lon": -0.00241,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "weaver"
+  ],
+  "fact": "The station opened in 1873 to replace Shern Hall Street when the Chingford line was extended northwards."
+ },
+ {
+  "id": "woodford",
+  "name": "Woodford",
+  "lat": 51.6069,
+  "lon": 0.03397,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "central"
+  ],
+  "fact": "The station opened in 1856, more than 90 years before the Central line took over the branch in 1947."
+ },
+ {
+  "id": "woodgrange-park",
+  "name": "Woodgrange Park",
+  "lat": 51.54926,
+  "lon": 0.04442,
+  "zones": [
+   3,
+   4
+  ],
+  "lines": [
+   "suffragette"
+  ],
+  "fact": "The name comes from the area's medieval role as a grange, or farm estate, belonging to Stratford Langthorne Abbey."
+ },
+ {
+  "id": "woodside-park",
+  "name": "Woodside Park",
+  "lat": 51.61801,
+  "lon": -0.18542,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "northern"
+  ],
+  "fact": "It opened as Torrington Park in 1872, was renamed within a month, and comes last alphabetically among Underground stations."
+ },
+ {
+  "id": "woolwich",
+  "name": "Woolwich",
+  "lat": 51.49217,
+  "lon": 0.07059,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "elizabeth"
+  ],
+  "fact": "The station was not in the original Crossrail plans and was only added after a housing developer helped fund its £162 million cost."
+ },
+ {
+  "id": "woolwich-arsenal",
+  "name": "Woolwich Arsenal",
+  "lat": 51.49001,
+  "lon": 0.06913,
+  "zones": [
+   4
+  ],
+  "lines": [
+   "dlr"
+  ],
+  "fact": "DLR trains leave the station heading east, because of the way the tunnel is aligned beneath the River Thames."
+ }
+]

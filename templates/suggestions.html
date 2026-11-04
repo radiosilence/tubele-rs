@@ -1,0 +1,15 @@
+<ul id="suggestions" role="listbox" aria-label="Matching stations">
+{%- for s in items %}
+  <li id="option-{{ loop.index0 }}" role="option" class="flex cursor-pointer items-center justify-between gap-2.5 rounded-[7px] px-2.5 py-[9px] text-[14.5px] font-semibold"
+    data-class="{'is-active': $active === {{ loop.index0 }}}"
+    data-attr:aria-selected="String($active === {{ loop.index0 }})"
+    data-on:mouseenter="$active = {{ loop.index0 }}"
+    data-on:mousedown="evt.preventDefault(); $active = {{ loop.index0 }}; @post('/guess')">
+    <span>{{ s.name }}</span>
+    <span class="inline-flex shrink-0 gap-[3px]" aria-hidden="true">
+      {%- for colour in s.lines %}<i class="inline-block size-2 rounded-full bg-(--line) {{ colour }}"></i>{% endfor -%}
+    </span>
+  </li>
+{%- endfor %}
+</ul>
+<p id="entry-empty" class="mt-1.5 text-center text-xs text-soft" role="status">{% if let Some(q) = no_match %}No station matches “{{ q }}”.{% endif %}</p>

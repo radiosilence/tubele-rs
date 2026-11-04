@@ -1,0 +1,6 @@
+<div class="mt-[26px] border-t border-edge pt-[18px]">
+  <p class="text-[10.5px] tracking-[0.14em] text-soft uppercase">Next station in</p>
+  <p class="mt-px font-mono text-2xl tabular-nums" aria-hidden="true"
+    data-text="((s) => [Math.floor(s / 3600), Math.floor(s / 60) % 60, s % 60].map((n) => String(n).padStart(2, '0')).join(':'))(Math.max(0, Math.floor(($_next - $_now) / 1000)))">{{ g.countdown }}</p>
+  <p class="sr-only">The next puzzle arrives at midnight, London time.</p>
+</div>

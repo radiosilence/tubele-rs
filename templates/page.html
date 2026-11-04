@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tubele — guess the London station</title>
+<meta name="description" content="{{ description }}">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#fdfcfa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14130f" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="{{ site_url }}/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="preload" href="/fonts/archivo-900.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
+<meta property="og:locale" content="en_GB">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tubele">
+<meta property="og:title" content="Tubele — guess the London station">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:url" content="{{ site_url }}/">
+<meta property="og:image" content="{{ site_url }}/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The word TUBELE spelled out in interchange circles threaded on a line.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tubele — guess the London station">
+<meta name="twitter:description" content="{{ description }}">
+<meta name="twitter:image" content="{{ site_url }}/og.png">
+<link rel="stylesheet" href="{{ css_url }}">
+<link rel="stylesheet" href="{{ lines_url }}">
+<script type="module" src="{{ js_url }}"></script>
+</head>
+<body>
+<div class="mx-auto max-w-[460px] px-3.5 pt-3.5 pb-7 xs:px-4 xs:pt-6 xs:pb-9"
+  data-signals="{{ signals }}">
+  <a class="absolute -left-[9999px] rounded-card bg-ink px-3.5 py-2.5 text-paper focus:top-3.5 focus:left-3.5 focus:z-20" href="#board">Skip to the board</a>
+
+  {% include "game.html" %}
+
+  <footer class="mt-[22px] text-center text-[10.5px] leading-[1.55] text-balance text-soft">
+    <p class="mb-2.5"><a class="inline-block rounded-full border-[1.5px] border-edge px-3.5 py-1.5 text-xs font-bold text-soft no-underline hover:border-soft hover:text-ink" href="https://ko-fi.com/I4Z52553GE" target="_blank" rel="noopener noreferrer">Support Mike on Ko-fi</a></p>
+    <p>Powered by TfL Open Data · Contains OS data © Crown copyright and database rights · Not affiliated with Transport for London</p>
+    <p class="mt-1.5 text-faint">No accounts and no tracking. One cookie remembers your streak.</p>
+    <p class="mt-2.5 text-faint">Built by <a class="text-soft underline underline-offset-2 hover:text-ink" href="https://mikekeefe.com" target="_blank" rel="noopener noreferrer">Mike Keefe</a>, upgraded by <a class="text-soft underline underline-offset-2 hover:text-ink" href="https://github.com/radiosilence" target="_blank" rel="noopener noreferrer">James Cleveland</a></p>
+  </footer>
+
+  <dialog id="how" aria-label="How to play" class="m-auto max-w-[min(400px,calc(100vw-28px))] bg-transparent p-0"
+    data-on:click="evt.target === el && el.close()"
+    {% if !seen_guide %}data-init="@modal(el)" data-on:close="@post('/seen')"{% endif %}>
+    <div class="rounded-[14px] bg-paper p-4 text-ink outline-none" tabindex="-1" data-modal-body>
+      <div class="mb-3 flex items-center justify-between">
+        <h2 class="eyebrow text-[11px]">How to play</h2>
+        <button type="button" class="icon-btn -m-1.5 mr-0" aria-label="Close" data-on:click="el.closest('dialog').close()">✕</button>
+      </div>
+      <div class="space-y-2.5 text-[14.5px] leading-[1.55]">
+        <p>One London station a day, six guesses. Underground, Overground, DLR and the Elizabeth line.</p>
+        <p>Each guess tells you how many <strong>stops away</strong> it is — by train, not across the map.</p>
+        <p class="text-soft">You will also see the fare zone, and any line your guess shares with the answer. Every miss reveals another clue.</p>
+        <p class="flex flex-wrap items-center gap-x-2 gap-y-1.5 text-[13px] text-soft">
+          <span class="zone zone-exact" aria-hidden="true">Zone 2</span> the answer&rsquo;s zone
+          <span class="h-0 basis-full"></span>
+          <span class="zone zone-near" aria-hidden="true">Zone 3</span> one zone away
+          <span class="h-0 basis-full"></span>
+          <span class="zone zone-none" aria-hidden="true">Zone 5</span> further off
+        </p>
+      </div>
+      <div class="mt-[22px] flex justify-center">
+        <button type="button" class="btn btn-primary" data-on:click="el.closest('dialog').close()">Play</button>
+      </div>
+    </div>
+  </dialog>
+</div>
+</body>
+</html>

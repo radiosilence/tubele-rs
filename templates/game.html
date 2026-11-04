@@ -1,0 +1,233 @@
+<div id="game">
+<header class="mb-3.5 flex items-center justify-between gap-2.5">
+  <h1 class="relative inline-flex shrink-0 gap-[3px] text-[0px]" aria-label="Tubele">
+    <span class="absolute -inset-x-2 top-1/2 -mt-[1.5px] h-[3px] rounded-xs bg-edge-strong" aria-hidden="true"></span>
+    {%- for (letter, colour) in g.wordmark %}
+    <span class="relative grid size-[27px] place-items-center rounded-full border-3 bg-paper text-[13px] font-black text-ink xs:size-8 xs:text-[15px] {{ colour }}" aria-hidden="true">{{ letter }}</span>
+    {%- endfor %}
+  </h1>
+  <div class="flex items-center gap-1.5">
+    <p class="text-[11px] font-semibold tracking-[0.04em] whitespace-nowrap text-soft">{{ g.strap }}</p>
+    <nav class="flex gap-1" aria-label="Game">
+      <button type="button" class="icon-btn" aria-label="How to play" data-on:click="@modal('#how')">?</button>
+      <button type="button" class="icon-btn" aria-label="Statistics" data-on:click="@modal('#stats')">▤</button>
+    </nav>
+  </div>
+</header>
+
+<div class="mb-3 flex flex-wrap items-center justify-between gap-2.5 rounded-card bg-sunken px-3 py-[9px] text-[13px]" role="status"
+  hidden data-attr:hidden="!($_now >= $_next)">
+  <span>No. {{ g.next_puzzle }} is ready.</span>
+  <button type="button" class="btn btn-small" data-on:click="@post('/daily')">Play it</button>
+</div>
+
+<p class="mb-3 rounded-card bg-sunken px-3 py-[9px] text-[13px] text-soft" role="status" hidden data-attr:hidden="!(!navigator.cookieEnabled)">
+  Your browser is blocking cookies, so this game won’t be saved and your streak won’t count.
+</p>
+
+<main id="board">
+  <section class="mb-3 rounded-card border-[1.5px] border-edge-strong px-3 pt-2 pb-2.5" aria-labelledby="clues-heading">
+    <h2 id="clues-heading" class="eyebrow mb-1.5">Service information</h2>
+    <dl class="grid grid-cols-2 gap-x-3 gap-y-2">
+      {%- for clue in g.clues %}
+      <div>
+        <dt class="text-[9.5px] leading-[1.2] tracking-[0.08em] text-soft uppercase">{{ clue.label }}</dt>
+        <dd class="mt-px text-[13.5px] leading-tight font-bold">{{ clue.value }}</dd>
+      </div>
+      {%- endfor %}
+    </dl>
+  </section>
+
+  <p class="sr-only" role="status" aria-live="polite">{{ g.announcement }}</p>
+
+  {%- if !g.rows.is_empty() %}
+  <ol class="mb-3 flex flex-col gap-1.5" aria-label="Your guesses">
+    {%- for row in g.rows %}
+    <li class="grid grid-cols-[58px_minmax(0,1fr)] items-start gap-3 rounded-card px-[11px] py-[9px] xs:px-3 xs:pt-2.5 xs:pb-[11px] {{ row.gauge }} {% if row.correct %}bg-go-wash shadow-[inset_0_0_0_1.5px_var(--go)] animate-land{% else %}bg-sunken{% endif %}">
+      <span class="sr-only">Guess {{ loop.index }}. </span>
+      <div class="text-center">
+        {%- if row.correct %}
+        <span class="block text-[26px] leading-[1.1] text-go" aria-hidden="true">✓</span>
+        <span class="sr-only">Correct.</span>
+        {%- else %}
+        <span class="block font-mono text-3xl leading-[0.95] font-semibold text-gauge tabular-nums" aria-hidden="true">{{ row.stops }}</span>
+        <span class="mt-px block text-[9px] font-bold tracking-widest text-soft uppercase" aria-hidden="true">{{ row.unit }}</span>
+        <span class="mt-1.5 block h-1 overflow-hidden rounded-xs bg-edge" aria-hidden="true"><span class="block h-full rounded-xs bg-gauge {{ row.fill }}"></span></span>
+        <span class="sr-only">{{ row.stops }} {{ row.unit }} away.</span>
+        {%- endif %}
+      </div>
+      <div class="min-w-0">
+        <p class="text-[15px] leading-tight {% if row.correct %}font-extrabold text-ink{% else %}font-bold text-soft{% endif %}">{{ row.name }}</p>
+        <div class="mt-1.5 flex flex-wrap items-center gap-1">
+          <span class="zone {{ row.zone_class }}" aria-label="{{ row.zone_aria }}"><span aria-hidden="true">{{ row.zones }}</span></span>
+          {%- for pill in row.pills %}{% include "pill.html" %}{% endfor %}
+        </div>
+        {%- if row.joke %}
+        <p class="mt-1 text-xs text-soft italic" aria-hidden="true">In some games that wins outright. Not this one.</p>
+        {%- endif %}
+      </div>
+    </li>
+    {%- endfor %}
+  </ol>
+  {%- endif %}
+
+  {%- match g.result %}
+  {%- when None %}
+  <div class="sticky bottom-0 z-[6] bg-linear-to-b from-transparent to-paper to-[14%] pb-[max(8px,env(safe-area-inset-bottom))]">
+    <label class="sr-only" for="guess">Guess a station</label>
+    <div class="relative">
+      <input id="guess" class="w-full rounded-card border-2 border-edge-strong bg-paper px-3.5 py-3 text-base font-semibold text-ink placeholder:font-medium placeholder:text-soft"
+        placeholder="Type a station…" role="combobox" aria-controls="suggestions" aria-autocomplete="list"
+        autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="go"
+        data-bind:q
+        data-attr:aria-expanded="String($_open && $_count > 0)"
+        data-attr:aria-activedescendant="$_open && $_count > 0 ? 'option-' + $active : null"
+        data-on:input="$_open = true; $active = 0"
+        data-on:input__debounce.60ms="@get('/suggest')"
+        data-on:focus="$_open = true"
+        data-on:blur="$_open = false"
+        data-on:keydown="evt.key === 'ArrowDown' ? (evt.preventDefault(), $_open = true, $active = Math.max(0, Math.min($active + 1, $_count - 1))) : evt.key === 'ArrowUp' ? (evt.preventDefault(), $active = Math.max($active - 1, 0)) : evt.key === 'Home' && $_open && $_count ? (evt.preventDefault(), $active = 0) : evt.key === 'End' && $_open && $_count ? (evt.preventDefault(), $active = $_count - 1) : evt.key === 'Enter' ? (evt.preventDefault(), @post('/guess')) : evt.key === 'Escape' ? (evt.preventDefault(), $_open = false) : evt.key === 'Tab' && $_open && $_count ? @post('/guess') : null">
+      <div id="suggest-wrap" class="absolute inset-x-0 z-[5] max-h-80 overflow-y-auto overscroll-contain rounded-card border-[1.5px] border-edge-strong bg-paper p-1"
+        hidden data-attr:hidden="!($_open && $_count > 0)">
+        <ul id="suggestions" role="listbox" aria-label="Matching stations"></ul>
+      </div>
+    </div>
+    <p id="entry-empty" class="mt-1.5 text-center text-xs text-soft" role="status"></p>
+    <p class="mt-1.5 text-center text-xs text-soft">{{ g.remaining }} {% if g.remaining == 1 %}guess{% else %}guesses{% endif %} left</p>
+    <ol class="mt-[7px] flex justify-center gap-1.5" aria-hidden="true">
+      {%- for used in g.pips %}
+      <li class="size-[7px] rounded-full border-[1.5px] {% if used %}border-soft bg-soft{% else %}border-edge{% endif %}"></li>
+      {%- endfor %}
+    </ol>
+  </div>
+  {%- when Some(r) %}
+  <section class="pt-1.5 text-center">
+    <header class="flex flex-col items-center gap-1.5">
+      <p class="rounded-full px-2.5 py-0.5 font-mono text-[13px] font-semibold tabular-nums {% if r.won %}bg-go text-on-go{% else %}border-[1.5px] border-edge text-soft{% endif %}">{{ r.score }}</p>
+      {%- if r.streak >= 2 %}
+      <p class="text-[13px] font-bold text-soft"><span aria-hidden="true">🔥</span> {{ r.streak }} day streak</p>
+      {%- endif %}
+    </header>
+    {%- if !r.won %}
+    <div class="mt-[22px]">
+      <p class="text-[26px] leading-[1.2] font-extrabold text-balance">{{ r.name }}</p>
+      <div class="mt-2.5 flex flex-wrap items-center justify-center gap-[5px]">
+        <span class="rounded-full border-[1.5px] border-edge px-2 py-0.5 text-[11px] font-bold whitespace-nowrap text-soft">{{ r.zones }}</span>
+        {%- for pill in r.pills %}{% include "pill.html" %}{% endfor %}
+      </div>
+      <p class="mt-3 text-[13px] text-soft">Closest you got: {{ r.closest }}</p>
+    </div>
+    {%- endif %}
+    <div class="mt-[26px] flex flex-wrap items-center justify-center gap-2.5">
+      <button type="button" class="btn btn-primary" data-on:click="@modal('#result')">Share result</button>
+      <button type="button" class="btn btn-quiet" data-on:click="@post('/practice')">{{ r.again }}</button>
+    </div>
+    {%- if g.daily %}{% include "countdown.html" %}{% endif %}
+  </section>
+
+  <dialog id="result" aria-label="{{ r.title }}" class="m-auto max-w-[min(400px,calc(100vw-28px))] bg-transparent p-0"
+    data-on:click="evt.target === el && el.close()"{% if g.open_result %} data-init="@modal(el)"{% endif %}>
+    <div class="rounded-[14px] bg-paper p-4 text-ink outline-none" tabindex="-1" data-modal-body>
+      <div class="flex items-center justify-between">
+        <h2 class="sr-only">{{ r.title }}</h2>
+        <span></span>
+        <button type="button" class="icon-btn -m-1.5 mr-0" aria-label="Close" data-on:click="el.closest('dialog').close()">✕</button>
+      </div>
+      <div class="pb-1 text-center">
+        <p class="text-[22px] font-extrabold tracking-[-0.01em] {% if r.won %}text-go{% endif %}">{{ r.word }}</p>
+        <p class="mt-0.5 mb-2.5 font-mono text-[46px] leading-[1.05] font-bold tracking-[-0.03em] tabular-nums">{{ r.score }}</p>
+        <p class="text-[17px] font-bold">{{ r.name }}
+          <span class="mt-1.5 flex flex-wrap items-center justify-center gap-1.5 text-xs font-semibold text-soft">
+            <span>{{ r.zones }}</span>
+            {%- for pill in r.top_pills %}{% include "pill.html" %}{% endfor %}
+          </span>
+        </p>
+        {%- if let Some(fact) = r.fact %}
+        <p class="mt-3.5 border-t border-edge pt-3 text-[13.5px] leading-[1.55] text-pretty text-soft">{{ fact }}</p>
+        {%- endif %}
+        {%- if r.streak >= 2 %}
+        <p class="mt-2.5 text-[13px] font-bold text-soft"><span aria-hidden="true">🔥</span> {{ r.streak }} day streak</p>
+        {%- endif %}
+        <div class="mt-3.5 mb-0.5 inline-flex flex-col gap-1" aria-hidden="true">
+          {%- for filled in r.grid %}
+          <div class="flex gap-1">
+            {%- for cell in 0..5 %}
+            <span class="size-4 rounded-sm {% if cell < *filled %}bg-go{% else %}bg-edge{% endif %}"></span>
+            {%- endfor %}
+          </div>
+          {%- endfor %}
+        </div>
+      </div>
+
+      <div class="mt-[18px]" data-share-root>
+        <div class="flex justify-center">
+          <button type="button" class="btn btn-primary min-w-[200px]" data-share="{{ r.share_text }}"
+            data-on:click="navigator.share ? @shareText(el.dataset.share) : @copyText(el.dataset.share)"
+            data-text="navigator.share ? 'Share result' : 'Copy result'">Share result</button>
+        </div>
+        <ul class="mt-3.5 grid grid-cols-4 gap-[7px]">
+          {%- for t in r.targets %}
+          <li{% if !t.always %} data-attr:hidden="!!navigator.share"{% endif %}>
+            <button type="button" class="flex w-full flex-col items-center gap-[5px] rounded-xl border-[1.5px] border-edge px-[3px] py-[9px] text-[11px] font-bold text-soft hover:border-soft hover:text-ink"
+              data-href="{{ t.href }}" data-on:click="@openShare(el.dataset.href)">
+              {% include "icon.html" %}<span>{{ t.label }}</span>
+            </button>
+          </li>
+          {%- endfor %}
+          <li>
+            <button type="button" class="flex w-full flex-col items-center gap-[5px] rounded-xl border-[1.5px] border-edge px-[3px] py-[9px] text-[11px] font-bold text-soft hover:border-soft hover:text-ink"
+              data-share="{{ r.share_text }}" data-on:click="@copyText(el.dataset.share)">
+              {% let t = r.copy_icon %}{% include "icon.html" %}<span>Copy</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="flex w-full flex-col items-center gap-[5px] rounded-xl border-[1.5px] border-edge px-[3px] py-[9px] text-[11px] font-bold text-soft hover:border-soft hover:text-ink"
+              data-card="{{ r.card }}" data-on:click="@shareImage(el.dataset.card)">
+              {% let t = r.image_icon %}{% include "icon.html" %}<span>Image</span>
+            </button>
+          </li>
+        </ul>
+        <p class="mt-2.5 min-h-[18px] text-center text-[12.5px] leading-[1.45] text-soft" role="status" data-share-note>&nbsp;</p>
+      </div>
+
+      <div class="mt-3.5 flex flex-col items-center gap-2">
+        {%- if g.daily %}{% include "countdown.html" %}{% endif %}
+        <button type="button" class="btn btn-quiet" data-on:click="el.closest('dialog').close(); @post('/practice')">{{ r.again }}</button>
+      </div>
+    </div>
+  </dialog>
+  {%- endmatch %}
+</main>
+
+<dialog id="stats" aria-label="Statistics" class="m-auto max-w-[min(400px,calc(100vw-28px))] bg-transparent p-0"
+  data-on:click="evt.target === el && el.close()">
+  <div class="rounded-[14px] bg-paper p-4 text-ink outline-none" tabindex="-1" data-modal-body>
+    <div class="mb-3 flex items-center justify-between">
+      <h2 class="eyebrow text-[11px]">Statistics</h2>
+      <button type="button" class="icon-btn -m-1.5 mr-0" aria-label="Close" data-on:click="el.closest('dialog').close()">✕</button>
+    </div>
+    {%- if g.stats.played == 0 %}
+    <p class="text-sm leading-normal text-soft">No games yet. Finish today’s station and your record starts here — played, win rate, and how long a streak you can hold.</p>
+    {%- else %}
+    <dl class="grid grid-cols-4 gap-1.5 text-center">
+      <div><dt class="text-[10px] tracking-[0.05em] text-soft uppercase">Played</dt><dd class="mt-0.5 text-[21px] font-extrabold">{{ g.stats.played }}</dd></div>
+      <div><dt class="text-[10px] tracking-[0.05em] text-soft uppercase">Win rate</dt><dd class="mt-0.5 text-[21px] font-extrabold">{{ g.stats.win_rate }}%</dd></div>
+      <div><dt class="text-[10px] tracking-[0.05em] text-soft uppercase">Streak</dt><dd class="mt-0.5 text-[21px] font-extrabold">{{ g.stats.streak }}</dd></div>
+      <div><dt class="text-[10px] tracking-[0.05em] text-soft uppercase">Best streak</dt><dd class="mt-0.5 text-[21px] font-extrabold">{{ g.stats.max_streak }}</dd></div>
+    </dl>
+    <h3 class="eyebrow mt-[18px] mb-2">Guess distribution</h3>
+    <ul class="flex flex-col gap-1">
+      {%- for bar in g.stats.bars %}
+      <li class="flex items-center gap-2">
+        <span class="w-2.5 font-mono text-xs text-soft">{{ bar.guesses }}</span>
+        <span class="flex-1">
+          <span class="flex justify-end rounded-[3px] px-1.5 py-0.5 font-mono text-[11.5px] {% if bar.today %}bg-go text-on-go{% else %}bg-edge text-ink{% endif %}" data-style:width="'{{ bar.width }}%'">{{ bar.count }}</span>
+        </span>
+        <span class="sr-only">{{ bar.count }} {% if bar.count == 1 %}win{% else %}wins{% endif %} in {{ bar.guesses }} {% if bar.guesses == 1 %}guess{% else %}guesses{% endif %}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+  </div>
+</dialog>
+</div>
