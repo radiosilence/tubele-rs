@@ -8,7 +8,7 @@ No answer reaches the browser before its board is finished. The answer station e
 
 ## Git
 
-- Work in PRs. PRs are squashed; merge main into a branch rather than rebasing.
+- Changes go straight to main. Releases still go through a release PR (`just release`).
 - Releases go through `just release`, never a hand-edited version on main. Never push tags; CI tags and publishes when a release PR merges.
 - Commits are signed.
 
