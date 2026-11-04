@@ -1,0 +1,274 @@
+/*
+ * Compiled by Tailwind into assets/app.css (`just css`). The compiled file is
+ * committed because the server embeds it, so building needs no Tailwind CLI.
+ *
+ * Pages carry their look as utilities in the templates and in the class
+ * strings the Rust code writes. What is here is what those cannot say well:
+ * the theme tokens, element defaults, and the few clusters repeated across
+ * the board, the result and the guide.
+ */
+@import "tailwindcss" source(none);
+@source "../templates";
+@source "../src";
+
+/*
+ * Light is the bare :root, dark only overrides values, so a theme is a set of
+ * variables rather than a second stylesheet. Contrast notes are the original
+ * game's: --ink-soft and --ink-faint carry real text, so both pass 4.5:1.
+ */
+:root {
+  color-scheme: light dark;
+  --paper: #fdfcfa;
+  --paper-raised: #ffffff;
+  --ink: #171512;
+  --ink-soft: #6f6a60;
+  --ink-faint: #757067;
+  --edge: #e4dfd6;
+  --edge-strong: #171512;
+  --go: #00682a;
+  --go-ink: #00682a;
+  --go-wash: #eef6f0;
+  --on-go: #ffffff;
+  --sunken: #f4f2ee;
+  --highlight: #d8e8dd;
+  --gauge-2: #7a7a5e;
+  --gauge-3: #4f7a4a;
+  --gauge-4: #2c7340;
+  --warn: #8a6500;
+  --warn-ink: #6b4e00;
+  --focus: #0060a9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #14130f;
+    --paper-raised: #1e1c18;
+    --ink: #f4f1ea;
+    --ink-soft: #a8a296;
+    --ink-faint: #8b8579;
+    --edge: #322f28;
+    --edge-strong: #f4f1ea;
+    --go: #4cc47a;
+    --go-ink: #6bd493;
+    --go-wash: #16241a;
+    --on-go: #0d1a11;
+    --sunken: #1c1a16;
+    --highlight: #24352a;
+    --gauge-2: #9a9a72;
+    --gauge-3: #74b478;
+    --gauge-4: #55c07f;
+    --warn: #d7a63b;
+    --warn-ink: #e0b558;
+    --focus: #6fb3ff;
+  }
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-raised: var(--paper-raised);
+  --color-ink: var(--ink);
+  --color-soft: var(--ink-soft);
+  --color-faint: var(--ink-faint);
+  --color-edge: var(--edge);
+  --color-edge-strong: var(--edge-strong);
+  --color-go: var(--go);
+  --color-go-ink: var(--go-ink);
+  --color-go-wash: var(--go-wash);
+  --color-on-go: var(--on-go);
+  --color-sunken: var(--sunken);
+  --color-highlight: var(--highlight);
+  --color-warn: var(--warn);
+  --color-warn-ink: var(--warn-ink);
+  --color-focus: var(--focus);
+  --color-gauge: var(--gauge-ink);
+}
+
+@theme {
+  --font-sans: "Archivo", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Spline Sans Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --radius-card: 10px;
+  --breakpoint-xs: 480px;
+  --animate-land: land 620ms ease-out 1;
+
+  @keyframes land {
+    0%,
+    100% {
+      transform: scale(1);
+      box-shadow: inset 0 0 0 1.5px var(--go);
+    }
+    40% {
+      transform: scale(1.018);
+      box-shadow: inset 0 0 0 2.5px var(--go);
+    }
+  }
+}
+
+/* Self-hosted, Latin subsets: every station name is Latin script. */
+@font-face {
+  font-family: "Archivo";
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/archivo-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Archivo";
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/archivo-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Archivo";
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/archivo-800.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Archivo";
+  font-weight: 900;
+  font-display: swap;
+  src: url("/fonts/archivo-900.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Spline Sans Mono";
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/spline-sans-mono-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Spline Sans Mono";
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/spline-sans-mono-600.woff2") format("woff2");
+}
+
+@layer base {
+  html,
+  body {
+    min-height: 100dvh;
+  }
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+  }
+  :focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 2px;
+  }
+  button:not(:disabled) {
+    cursor: pointer;
+  }
+  dialog::backdrop {
+    background: rgb(0 0 0 / 55%);
+  }
+}
+
+/* Labels set in small capitals above a value: clue labels, modal titles. */
+@utility eyebrow {
+  @apply text-[10px] tracking-[0.16em] text-soft uppercase;
+}
+
+@utility btn {
+  @apply min-h-11 rounded-full border-2 border-edge-strong bg-transparent px-5 py-2.5 text-sm font-bold text-ink;
+}
+@utility btn-primary {
+  @apply border-ink bg-ink text-paper;
+}
+@utility btn-quiet {
+  @apply border-transparent px-3 font-semibold text-soft hover:bg-sunken hover:text-ink;
+}
+@utility btn-small {
+  @apply min-h-[34px] px-[13px] py-[5px] text-[12.5px];
+}
+@utility icon-btn {
+  @apply relative grid size-[34px] place-items-center rounded-full text-[15px] leading-none text-soft after:absolute after:-inset-[5px] hover:bg-sunken hover:text-ink;
+}
+
+/*
+ * Zone chips. The three states differ by fill, border colour and border
+ * style, so the near-miss reads even to someone who cannot separate the hues.
+ */
+@utility zone {
+  @apply rounded-full border-[1.5px] px-2 py-0.5 text-[11px] font-bold whitespace-nowrap;
+}
+@utility zone-exact {
+  @apply border-go bg-go text-on-go;
+}
+@utility zone-near {
+  @apply border-dotted border-warn text-warn-ink;
+}
+@utility zone-none {
+  @apply border-edge text-soft;
+}
+
+/*
+ * Line chips: the line colour is an identifying bar, not a text background,
+ * because several official colours cannot carry legible text. The colour
+ * arrives as --line from /assets/lines.css.
+ */
+@utility pill {
+  @apply inline-flex items-center gap-1 rounded-full border-[1.5px] border-edge bg-paper py-0.5 pr-[7px] pl-1 text-[10.5px] font-bold whitespace-nowrap text-ink;
+  & > i {
+    @apply h-[11px] w-[3px] rounded-xs bg-(--line);
+  }
+}
+@utility pill-shared {
+  @apply border-ink shadow-[inset_0_0_0_0.5px_var(--ink)];
+  & > i {
+    @apply h-[13px] w-[5px];
+  }
+}
+@utility pill-miss {
+  @apply border-transparent bg-transparent pl-[3px] font-semibold text-soft;
+  & > span {
+    @apply line-through;
+  }
+  & > i {
+    @apply h-[9px] w-0.5 opacity-50;
+  }
+}
+
+/* Gauge tone by distance band, matching the share grid. Not a red-to-green
+   ramp: green already means shared and correct, so red would read as wrong. */
+@utility gauge-0 {
+  --gauge-ink: var(--ink-faint);
+}
+@utility gauge-1 {
+  --gauge-ink: var(--ink-soft);
+}
+@utility gauge-2 {
+  --gauge-ink: var(--gauge-2);
+}
+@utility gauge-3 {
+  --gauge-ink: var(--gauge-3);
+}
+@utility gauge-4 {
+  --gauge-ink: var(--gauge-4);
+}
+@utility gauge-5 {
+  --gauge-ink: var(--go);
+}
+
+/* Toggled by Datastar on the highlighted suggestion. */
+@utility is-active {
+  @apply bg-highlight text-ink;
+}
+
+/* Set by assets/app.js once it has measured the room around the field. */
+#suggest-wrap {
+  top: calc(100% + 6px);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 16%);
+}
+#suggest-wrap[data-side="above"] {
+  top: auto;
+  bottom: calc(100% + 6px);
+  box-shadow: 0 -8px 20px rgb(0 0 0 / 16%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

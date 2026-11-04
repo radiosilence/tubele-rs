@@ -1,0 +1,33 @@
+[package]
+name = "tubele"
+version = "0.1.0"
+edition = "2024"
+description = "A daily London station guessing game, server-driven"
+repository = "https://github.com/radiosilence/tubele-rs"
+publish = false
+
+[dependencies]
+anyhow = "1.0.104"
+askama = "0.16.1"
+axum = "0.8.9"
+axum-extra = { version = "0.12.6", features = ["cookie"] }
+base64 = "0.23.1"
+futures-util = "0.3.34"
+jiff = { version = "0.2.39", features = ["tzdb-bundle-always"] }
+rand = "0.10.3"
+rusqlite = { version = "0.41", features = ["bundled"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+tokio = { version = "1.54.1", features = ["full"] }
+tower-http = { version = "0.7.1", features = ["trace", "compression-gzip"] }
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.23", features = ["env-filter"] }
+
+[dev-dependencies]
+http-body-util = "0.1.5"
+tower = "0.5.3"
+
+[profile.release]
+strip = true
+lto = "thin"
+codegen-units = 1

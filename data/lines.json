@@ -1,0 +1,135 @@
+[
+ {
+  "id": "bakerloo",
+  "name": "Bakerloo",
+  "shortName": "Bakerloo",
+  "colour": "#B36305",
+  "mode": "tube"
+ },
+ {
+  "id": "central",
+  "name": "Central",
+  "shortName": "Central",
+  "colour": "#E32017",
+  "mode": "tube"
+ },
+ {
+  "id": "circle",
+  "name": "Circle",
+  "shortName": "Circle",
+  "colour": "#FFD300",
+  "mode": "tube"
+ },
+ {
+  "id": "district",
+  "name": "District",
+  "shortName": "District",
+  "colour": "#00782A",
+  "mode": "tube"
+ },
+ {
+  "id": "hammersmith-city",
+  "name": "Hammersmith & City",
+  "shortName": "H&C",
+  "colour": "#F3A9BB",
+  "mode": "tube"
+ },
+ {
+  "id": "jubilee",
+  "name": "Jubilee",
+  "shortName": "Jubilee",
+  "colour": "#A0A5A9",
+  "mode": "tube"
+ },
+ {
+  "id": "metropolitan",
+  "name": "Metropolitan",
+  "shortName": "Metropolitan",
+  "colour": "#9B0056",
+  "mode": "tube"
+ },
+ {
+  "id": "northern",
+  "name": "Northern",
+  "shortName": "Northern",
+  "colour": "#000000",
+  "mode": "tube"
+ },
+ {
+  "id": "piccadilly",
+  "name": "Piccadilly",
+  "shortName": "Piccadilly",
+  "colour": "#003688",
+  "mode": "tube"
+ },
+ {
+  "id": "victoria",
+  "name": "Victoria",
+  "shortName": "Victoria",
+  "colour": "#0098D4",
+  "mode": "tube"
+ },
+ {
+  "id": "waterloo-city",
+  "name": "Waterloo & City",
+  "shortName": "W&C",
+  "colour": "#95CDBA",
+  "mode": "tube"
+ },
+ {
+  "id": "dlr",
+  "name": "DLR",
+  "shortName": "DLR",
+  "colour": "#00A4A7",
+  "mode": "dlr"
+ },
+ {
+  "id": "elizabeth",
+  "name": "Elizabeth",
+  "shortName": "Elizabeth",
+  "colour": "#6950A1",
+  "mode": "elizabeth"
+ },
+ {
+  "id": "liberty",
+  "name": "Liberty",
+  "shortName": "Liberty",
+  "colour": "#5D6061",
+  "mode": "overground"
+ },
+ {
+  "id": "lioness",
+  "name": "Lioness",
+  "shortName": "Lioness",
+  "colour": "#FAA61A",
+  "mode": "overground"
+ },
+ {
+  "id": "mildmay",
+  "name": "Mildmay",
+  "shortName": "Mildmay",
+  "colour": "#0077AD",
+  "mode": "overground"
+ },
+ {
+  "id": "suffragette",
+  "name": "Suffragette",
+  "shortName": "Suffragette",
+  "colour": "#5BBD72",
+  "mode": "overground"
+ },
+ {
+  "id": "weaver",
+  "name": "Weaver",
+  "shortName": "Weaver",
+  "colour": "#823A62",
+  "mode": "overground"
+ },
+ {
+  "id": "windrush",
+  "name": "Windrush",
+  "shortName": "Windrush",
+  "colour": "#EF3340",
+  "mode": "overground"
+ }
+]
