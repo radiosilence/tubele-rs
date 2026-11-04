@@ -4,6 +4,20 @@ A daily London station guessing game. Six guesses; each one tells you how many s
 
 This is a server-driven port of [Mike Keefe's Tubele](https://github.com/mike-keefe/tubele). The original is a React app that ships the whole answer schedule to the browser, obfuscated but recoverable. Here the schedule, every board and every player's record live on the server: the page is rendered by askama, interactions are Datastar requests answered with SSE patches, and the answer reaches the browser only once the board it belongs to is finished.
 
+## Why this exists
+
+Mike's Tubele is a lovely game with one flaw: it believes everything your browser tells it.
+
+- **A year of answers ships to every player.** `schedule.json` holds the whole schedule, XOR-packed with the key `mind-the-gap`, and the key is in the bundle next to it. The original README calls this "a speed bump, not security", which is generous to the speed bump. Thirty seconds in devtools gets you every answer until next August.
+- **Your streak is whatever you say it is.** Stats live in `localStorage`, so a 400-day streak is one `localStorage.setItem` away.
+- **The board is yours to rewind.** Lose, clear site data, and replay the day knowing the answer.
+
+Here the schedule never leaves the server, the board and your record are rows in SQLite, and the browser is told the answer only after it has earned it. Search and clues are computed server-side, and so is every guess: the client sends what you typed, not which station you meant.
+
+It does this with less in the browser, too. The original is a React single-page app; this is HTML rendered in Rust, with Datastar (about 13 KB gzipped) patching it over SSE and one 3.5 KB script for the clipboard and the Stories card. Everything that made the original good, including its accessibility work (the ARIA combobox, the live region announcing every guess), came across unchanged, because it was good.
+
+You can still open a private window, lose on purpose and come back knowing the answer. Some problems are not software.
+
 ## Running it
 
 ```sh
