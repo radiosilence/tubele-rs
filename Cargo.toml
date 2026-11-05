@@ -1,6 +1,6 @@
 [package]
 name = "tubele"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "A daily London station guessing game, server-driven"
 repository = "https://github.com/radiosilence/tubele-rs"
