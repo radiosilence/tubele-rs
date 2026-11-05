@@ -1,0 +1,1 @@
+- **Brotli and zstd compression.** Pages, assets and fragment responses are now compressed with brotli or zstd when the browser accepts them, falling back to gzip; previously only gzip was built in.
