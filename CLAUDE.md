@@ -35,4 +35,5 @@ just css     # after changing styles/, a template or class strings in src/
 
 - Tailwind v4, standalone CLI from mise. Tokens are in `styles/app.css`; class names written in Rust must be literal strings so Tailwind's `@source "../src"` finds them.
 - The CSP has no `unsafe-inline`: no `style=""` and no inline scripts. Line colours come from the generated `/assets/lines.css`; elements that start hidden use the `hidden` attribute with `data-attr:hidden`, not `data-show`, so they do not flash before Datastar loads.
-- `assets/app.js` is plain JavaScript with no build step. It is served with its `./datastar.js` import rewritten to the fingerprinted URL, so the page has one Datastar instance.
+- `assets/app.js` is plain JavaScript with no build step. It is served with its `./datastar.js` import rewritten to the fingerprinted URL of the script `askama_datastar` serves, so the page has one Datastar instance.
+- Patches, event streams, the POST guard, signals and Datastar's script come from `askama_datastar` (kōan standard §8); a fragment is written once, its template included by the page and rendered alone for a patch.

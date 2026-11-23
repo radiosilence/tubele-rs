@@ -9,10 +9,10 @@ publish = false
 [dependencies]
 anyhow = "1.0.104"
 askama = "0.16.1"
+askama_datastar = "0.1.0"
 axum = "0.8.9"
 axum-extra = { version = "0.12.6", features = ["cookie"] }
 base64 = "0.23.1"
-futures-util = "0.3.34"
 jiff = { version = "0.2.39", features = ["tzdb-bundle-always"] }
 rand = "0.10.3"
 rusqlite = { version = "0.41", features = ["bundled"] }
