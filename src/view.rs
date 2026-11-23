@@ -50,6 +50,8 @@ pub struct PageTemplate {
     pub css_url: &'static str,
     pub js_url: &'static str,
     pub lines_url: &'static str,
+    pub display_font_url: &'static str,
+    pub body_font_url: &'static str,
 }
 
 #[derive(Template)]

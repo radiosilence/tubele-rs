@@ -55,16 +55,19 @@ pub fn router(state: AppState) -> Router {
         .route("/practice", post(practice))
         .route("/daily", post(daily))
         .route("/seen", post(seen))
-        .route("/healthz", get(|| async { "ok" }))
         .route("/robots.txt", get(robots))
         .route("/sitemap.xml", get(sitemap))
         .route("/assets/lines.css", get(lines_css))
         .merge(assets())
         .fallback(not_found)
         .layer(middleware::from_fn(require_datastar_on_post))
-        .layer(middleware::from_fn(security_headers))
         .with_state(state);
+    // The probe stays outside the perimeter: shed under load, it would take
+    // the only replica out of the Service just when it is busiest.
     perimeter(routes)
+        .route("/healthz", get(|| async { "ok" }))
+        // Outermost, so the perimeter's own answers carry the headers too.
+        .layer(middleware::from_fn(security_headers))
 }
 
 // ─── Perimeter ───
@@ -74,7 +77,9 @@ pub fn router(state: AppState) -> Router {
 /// a kilobyte.
 const MAX_BODY: usize = 8 * 1024;
 
-/// How long a request has to produce its response. Every handler is one
+/// How long a request has to produce its response, answered 503: the server
+/// is at fault, and a 408 invites the browser to replay a POST whose
+/// transaction may already have committed. Every handler is one
 /// SQLite transaction on a small database, done in milliseconds, so one still
 /// going after this is stuck. It bounds the time to the response, not the
 /// body: the SSE answers here are a few events built after the work is done,
@@ -95,7 +100,7 @@ fn perimeter(router: Router) -> Router {
         .layer(CatchPanicLayer::new())
         .layer(RequestBodyLimitLayer::new(MAX_BODY))
         .layer(TimeoutLayer::with_status_code(
-            StatusCode::REQUEST_TIMEOUT,
+            StatusCode::SERVICE_UNAVAILABLE,
             REQUEST_TIMEOUT,
         ))
         // Shed rather than queue: a concurrency limit alone parks callers on a
@@ -287,6 +292,8 @@ async fn page(State(state): State<AppState>, jar: CookieJar) -> Result<Response,
         css_url: &CSS_URL,
         js_url: &JS_URL,
         lines_url: &LINES_URL,
+        display_font_url: font_url("/fonts/archivo-900.woff2"),
+        body_font_url: font_url("/fonts/archivo-400.woff2"),
     }
     .render()?;
     Ok((jar, Html(html)).into_response())
@@ -558,13 +565,27 @@ const FONTS: [(&str, &[u8]); 6] = [
     ),
 ];
 static APP_CSS_BODY: LazyLock<String> = LazyLock::new(|| {
-    FONTS.iter().fold(APP_CSS.to_owned(), |css, (path, body)| {
-        css.replace(
-            &format!("url(\"{path}\")"),
-            &format!("url(\"{}\")", versioned(path, body)),
-        )
-    })
+    FONT_URLS
+        .iter()
+        .fold(APP_CSS.to_owned(), |css, (path, url)| {
+            css.replace(&format!("url(\"{path}\")"), &format!("url(\"{url}\")"))
+        })
 });
+/// Each font's fingerprinted URL, for the stylesheet and the page's preloads
+/// alike: a preload of any other URL is a second download nothing uses.
+static FONT_URLS: LazyLock<Vec<(&str, String)>> = LazyLock::new(|| {
+    FONTS
+        .iter()
+        .map(|(path, body)| (*path, versioned(path, body)))
+        .collect()
+});
+pub(crate) fn font_url(path: &str) -> &'static str {
+    FONT_URLS
+        .iter()
+        .find(|(p, _)| *p == path)
+        .map(|(_, url)| url.as_str())
+        .unwrap_or_else(|| panic!("{path} is not one of FONTS"))
+}
 static CSS_URL: LazyLock<String> =
     LazyLock::new(|| versioned("/assets/app.css", APP_CSS_BODY.as_bytes()));
 /// app.js imports Datastar by the same fingerprinted URL the browser caches,

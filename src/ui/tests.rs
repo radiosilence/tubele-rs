@@ -157,3 +157,49 @@ async fn the_stylesheet_names_its_fonts_by_urls_cached_for_good() {
         );
     }
 }
+
+#[tokio::test]
+async fn the_page_preloads_fonts_by_the_urls_the_stylesheet_uses() {
+    let response = app()
+        .await
+        .oneshot(Request::builder().uri("/").body(Body::empty()).unwrap())
+        .await
+        .unwrap();
+    let page = body(response).await;
+    let preloads: Vec<&str> = page
+        .split("<link rel=\"preload\" href=\"")
+        .skip(1)
+        .map(|rest| rest.split('"').next().unwrap())
+        .collect();
+    assert_eq!(preloads.len(), 2);
+    for href in preloads {
+        let href = href.replace("&#x3f;", "?").replace("&#x3d;", "=");
+        assert!(
+            APP_CSS_BODY.contains(&format!("url(\"{href}\")")),
+            "{href} is preloaded but the stylesheet never asks for it"
+        );
+    }
+}
+
+#[tokio::test]
+async fn the_perimeters_own_answers_carry_the_security_headers() {
+    let response = app()
+        .await
+        .oneshot(
+            Request::builder()
+                .method("POST")
+                .uri("/guess")
+                .header("datastar-request", "true")
+                .header(header::CONTENT_TYPE, "application/json")
+                .body(Body::from("a".repeat(MAX_BODY + 1)))
+                .unwrap(),
+        )
+        .await
+        .unwrap();
+    assert_eq!(response.status(), StatusCode::PAYLOAD_TOO_LARGE);
+    assert!(
+        response
+            .headers()
+            .contains_key(header::CONTENT_SECURITY_POLICY)
+    );
+}
