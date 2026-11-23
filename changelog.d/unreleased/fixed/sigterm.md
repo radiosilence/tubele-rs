@@ -1,0 +1,1 @@
+- **Deploys no longer stall for half a minute.** The server ignored the SIGTERM a rollout sends, as PID 1 in a scratch image has no default handler, so each restart waited out the grace period; it now keeps serving for five seconds while the ingress lets go, then finishes what is in flight and exits.

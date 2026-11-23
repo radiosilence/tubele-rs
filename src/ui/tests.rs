@@ -92,3 +92,68 @@ async fn unknown_paths_are_real_404s() {
         .unwrap();
     assert_eq!(response.status(), StatusCode::NOT_FOUND);
 }
+
+#[tokio::test]
+async fn an_oversized_body_is_refused_before_it_is_read() {
+    let response = app()
+        .await
+        .oneshot(
+            Request::builder()
+                .method("POST")
+                .uri("/guess")
+                .header("datastar-request", "true")
+                .header(header::CONTENT_TYPE, "application/json")
+                .body(Body::from(format!(
+                    r#"{{"q":"{}","active":0}}"#,
+                    "a".repeat(MAX_BODY)
+                )))
+                .unwrap(),
+        )
+        .await
+        .unwrap();
+    assert_eq!(response.status(), StatusCode::PAYLOAD_TOO_LARGE);
+}
+
+#[tokio::test]
+async fn a_panicking_handler_answers_500_rather_than_dropping_the_connection() {
+    async fn boom() -> &'static str {
+        panic!("handler exploded");
+    }
+    let response = perimeter(Router::new().route("/boom", get(boom)))
+        .oneshot(Request::builder().uri("/boom").body(Body::empty()).unwrap())
+        .await
+        .unwrap();
+    assert_eq!(response.status(), StatusCode::INTERNAL_SERVER_ERROR);
+}
+
+#[tokio::test]
+async fn the_stylesheet_names_its_fonts_by_urls_cached_for_good() {
+    let app = app().await;
+    let response = app
+        .clone()
+        .oneshot(
+            Request::builder()
+                .uri(CSS_URL.as_str())
+                .body(Body::empty())
+                .unwrap(),
+        )
+        .await
+        .unwrap();
+    let css = body(response).await;
+    for (path, _) in FONTS {
+        let start = css
+            .find(&format!("url(\"{path}?v="))
+            .unwrap_or_else(|| panic!("{path} is not fingerprinted"));
+        let url = css[start + 5..].split('"').next().unwrap();
+        let response = app
+            .clone()
+            .oneshot(Request::builder().uri(url).body(Body::empty()).unwrap())
+            .await
+            .unwrap();
+        assert_eq!(response.status(), StatusCode::OK);
+        assert_eq!(
+            response.headers()[header::CACHE_CONTROL],
+            "public, max-age=31536000, immutable"
+        );
+    }
+}
