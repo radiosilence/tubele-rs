@@ -1,0 +1,1 @@
+- **Datastar 1.0.5, through askama_datastar.** The game's patches, its POST guard and Datastar's script come from the shared crate rather than code of the game's own, and Datastar moves from 1.0.4 to 1.0.5, which fixes reconnecting after a tab returns to the foreground.
