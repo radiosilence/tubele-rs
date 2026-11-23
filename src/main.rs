@@ -13,7 +13,8 @@ use std::path::PathBuf;
 use std::sync::Arc;
 use std::time::Duration;
 
-use anyhow::Result;
+use anyhow::{Context, Result};
+use tokio::signal::unix::{Signal, SignalKind, signal};
 use tower_http::compression::CompressionLayer;
 use tower_http::trace::TraceLayer;
 use tracing_subscriber::EnvFilter;
@@ -21,6 +22,26 @@ use tracing_subscriber::EnvFilter;
 /// A random 128-bit id as hex: a player.
 pub fn new_id() -> String {
     format!("{:032x}", rand::random::<u128>())
+}
+
+/// How long the listener stays open after SIGTERM. Traefik keeps routing to a
+/// terminating pod until the endpoint's removal reaches it, and a guess landing
+/// on a closed listener in that window would be a failed request.
+const DRAIN: Duration = Duration::from_secs(5);
+
+/// Resolves `DRAIN` after SIGTERM, or at once on Ctrl-C. As PID 1 in a scratch
+/// image nothing installs a default handler, so without this the kubelet's
+/// SIGTERM is ignored and every rollout waits out the grace period for a
+/// SIGKILL.
+async fn shutdown_signal(mut term: Signal) {
+    tokio::select! {
+        _ = term.recv() => {
+            tracing::info!("SIGTERM, draining for {DRAIN:?}");
+            tokio::time::sleep(DRAIN).await;
+        }
+        _ = tokio::signal::ctrl_c() => {}
+    }
+    tracing::info!("shutting down");
 }
 
 #[tokio::main]
@@ -31,6 +52,10 @@ async fn main() -> Result<()> {
                 .unwrap_or_else(|_| "tubele=info,tower_http=info,warn".into()),
         )
         .init();
+
+    // Before the network and the database load, so a SIGTERM during start-up
+    // is heard rather than ignored.
+    let term = signal(SignalKind::terminate()).context("installing the SIGTERM handler")?;
 
     let bind = std::env::var("BIND_ADDR").unwrap_or_else(|_| "0.0.0.0:8080".into());
     let db_path =
@@ -69,9 +94,7 @@ async fn main() -> Result<()> {
     let listener = tokio::net::TcpListener::bind(&bind).await?;
     tracing::info!(%bind, "listening");
     axum::serve(listener, app)
-        .with_graceful_shutdown(async {
-            let _ = tokio::signal::ctrl_c().await;
-        })
+        .with_graceful_shutdown(shutdown_signal(term))
         .await?;
     Ok(())
 }

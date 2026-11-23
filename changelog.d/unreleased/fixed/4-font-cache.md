@@ -1,0 +1,1 @@
+- **Fonts are cached for good.** The stylesheet named them by bare URLs, which browsers rechecked every hour; it now names each by a fingerprinted URL, kept until a release changes it.

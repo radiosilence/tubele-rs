@@ -5,19 +5,26 @@
 use std::collections::HashSet;
 use std::convert::Infallible;
 use std::sync::{Arc, LazyLock};
+use std::time::Duration;
 
 use askama::Template;
+use axum::error_handling::HandleErrorLayer;
 use axum::extract::{Query, Request, State};
 use axum::http::{self, HeaderValue, StatusCode, header};
 use axum::middleware::{self, Next};
 use axum::response::sse::{Event, Sse};
 use axum::response::{Html, IntoResponse, Response};
 use axum::routing::{get, post};
-use axum::{Json, Router};
+use axum::{BoxError, Json, Router};
 use axum_extra::extract::cookie::{Cookie, CookieJar, SameSite};
 use jiff::Timestamp;
 use serde::Deserialize;
 use serde_json::json;
+use tower::ServiceBuilder;
+use tower::load_shed::error::Overloaded;
+use tower_http::catch_panic::CatchPanicLayer;
+use tower_http::limit::RequestBodyLimitLayer;
+use tower_http::timeout::TimeoutLayer;
 
 use crate::engine::{Line, Network, ms_until_next_puzzle};
 use crate::game::{Board, Mode, PROTECT_UPCOMING_DAYS, Stats, Status};
@@ -41,22 +48,83 @@ const CSP: &str = "default-src 'self'; script-src 'self' 'unsafe-eval'; style-sr
      base-uri 'none'; object-src 'none'";
 
 pub fn router(state: AppState) -> Router {
-    Router::new()
+    let routes = Router::new()
         .route("/", get(page))
         .route("/suggest", get(suggest))
         .route("/guess", post(guess))
         .route("/practice", post(practice))
         .route("/daily", post(daily))
         .route("/seen", post(seen))
-        .route("/healthz", get(|| async { "ok" }))
         .route("/robots.txt", get(robots))
         .route("/sitemap.xml", get(sitemap))
         .route("/assets/lines.css", get(lines_css))
         .merge(assets())
         .fallback(not_found)
         .layer(middleware::from_fn(require_datastar_on_post))
+        .with_state(state);
+    // The probe stays outside the perimeter: shed under load, it would take
+    // the only replica out of the Service just when it is busiest.
+    perimeter(routes)
+        .route("/healthz", get(|| async { "ok" }))
+        // Outermost, so the perimeter's own answers carry the headers too.
         .layer(middleware::from_fn(security_headers))
-        .with_state(state)
+}
+
+// ─── Perimeter ───
+
+/// The largest request body taken. The only bodies are Datastar's signals on a
+/// POST: a few numbers and what was typed into the station search, well under
+/// a kilobyte.
+const MAX_BODY: usize = 8 * 1024;
+
+/// How long a request has to produce its response, answered 503: the server
+/// is at fault, and a 408 invites the browser to replay a POST whose
+/// transaction may already have committed. Every handler is one
+/// SQLite transaction on a small database, done in milliseconds, so one still
+/// going after this is stuck. It bounds the time to the response, not the
+/// body: the SSE answers here are a few events built after the work is done,
+/// and none stays open, so no route needs exempting.
+const REQUEST_TIMEOUT: Duration = Duration::from_secs(10);
+
+/// Requests handled at once. Each holds a pooled SQLite connection on the
+/// blocking pool, and the pod has half a core and 128 MiB; a request takes a
+/// millisecond, so this many at once means the server is already behind and
+/// more would only queue.
+const MAX_IN_FLIGHT: usize = 64;
+
+/// Panic catch, body limit, timeout and load shed, innermost first.
+fn perimeter(router: Router) -> Router {
+    router
+        // Innermost so it is inside the timeout: a panicking handler becomes a
+        // 500 rather than a dropped connection.
+        .layer(CatchPanicLayer::new())
+        .layer(RequestBodyLimitLayer::new(MAX_BODY))
+        .layer(TimeoutLayer::with_status_code(
+            StatusCode::SERVICE_UNAVAILABLE,
+            REQUEST_TIMEOUT,
+        ))
+        // Shed rather than queue: a concurrency limit alone parks callers on a
+        // semaphore, so an overloaded server would answer everyone slowly
+        // instead of telling the surplus to come back.
+        .layer(
+            ServiceBuilder::new()
+                .layer(HandleErrorLayer::new(|err: BoxError| async move {
+                    if err.is::<Overloaded>() {
+                        (
+                            StatusCode::SERVICE_UNAVAILABLE,
+                            "Too busy. Try again shortly.",
+                        )
+                    } else {
+                        tracing::error!(error = %err, "request failed");
+                        (
+                            StatusCode::INTERNAL_SERVER_ERROR,
+                            "Signal failure. Reload and try again.",
+                        )
+                    }
+                }))
+                .load_shed()
+                .concurrency_limit(MAX_IN_FLIGHT),
+        )
 }
 
 // ─── Players ───
@@ -224,6 +292,8 @@ async fn page(State(state): State<AppState>, jar: CookieJar) -> Result<Response,
         css_url: &CSS_URL,
         js_url: &JS_URL,
         lines_url: &LINES_URL,
+        display_font_url: font_url("/fonts/archivo-900.woff2"),
+        body_font_url: font_url("/fonts/archivo-400.woff2"),
     }
     .render()?;
     Ok((jar, Html(html)).into_response())
@@ -465,8 +535,59 @@ const APP_JS: &str = include_str!("../assets/app.js");
 
 static DATASTAR_URL: LazyLock<String> =
     LazyLock::new(|| versioned("/assets/datastar.js", DATASTAR_JS.as_bytes()));
+/// The fonts app.css names. They change only with a release, so the
+/// stylesheet is served naming each by its fingerprinted URL, which is cached
+/// for good; the bare URLs it was compiled with would be rechecked hourly.
+const FONTS: [(&str, &[u8]); 6] = [
+    (
+        "/fonts/archivo-400.woff2",
+        include_bytes!("../assets/fonts/archivo-400.woff2"),
+    ),
+    (
+        "/fonts/archivo-700.woff2",
+        include_bytes!("../assets/fonts/archivo-700.woff2"),
+    ),
+    (
+        "/fonts/archivo-800.woff2",
+        include_bytes!("../assets/fonts/archivo-800.woff2"),
+    ),
+    (
+        "/fonts/archivo-900.woff2",
+        include_bytes!("../assets/fonts/archivo-900.woff2"),
+    ),
+    (
+        "/fonts/spline-sans-mono-400.woff2",
+        include_bytes!("../assets/fonts/spline-sans-mono-400.woff2"),
+    ),
+    (
+        "/fonts/spline-sans-mono-600.woff2",
+        include_bytes!("../assets/fonts/spline-sans-mono-600.woff2"),
+    ),
+];
+static APP_CSS_BODY: LazyLock<String> = LazyLock::new(|| {
+    FONT_URLS
+        .iter()
+        .fold(APP_CSS.to_owned(), |css, (path, url)| {
+            css.replace(&format!("url(\"{path}\")"), &format!("url(\"{url}\")"))
+        })
+});
+/// Each font's fingerprinted URL, for the stylesheet and the page's preloads
+/// alike: a preload of any other URL is a second download nothing uses.
+static FONT_URLS: LazyLock<Vec<(&str, String)>> = LazyLock::new(|| {
+    FONTS
+        .iter()
+        .map(|(path, body)| (*path, versioned(path, body)))
+        .collect()
+});
+pub(crate) fn font_url(path: &str) -> &'static str {
+    FONT_URLS
+        .iter()
+        .find(|(p, _)| *p == path)
+        .map(|(_, url)| url.as_str())
+        .unwrap_or_else(|| panic!("{path} is not one of FONTS"))
+}
 static CSS_URL: LazyLock<String> =
-    LazyLock::new(|| versioned("/assets/app.css", APP_CSS.as_bytes()));
+    LazyLock::new(|| versioned("/assets/app.css", APP_CSS_BODY.as_bytes()));
 /// app.js imports Datastar by the same fingerprinted URL the browser caches,
 /// so there is one Datastar on the page, not two.
 static APP_JS_BODY: LazyLock<String> =
@@ -532,7 +653,11 @@ fn assets() -> Router<AppState> {
         .route(
             "/assets/app.css",
             get(|request: Request| async move {
-                cached("text/css; charset=utf-8", APP_CSS, request.uri().query())
+                cached(
+                    "text/css; charset=utf-8",
+                    APP_CSS_BODY.as_str(),
+                    request.uri().query(),
+                )
             }),
         )
         .route(
@@ -555,43 +680,14 @@ fn assets() -> Router<AppState> {
                 )
             }),
         );
-    // Fonts never change under the same name; the query makes them immutable.
-    let r = file!(
-        r,
-        "/fonts/archivo-400.woff2",
-        "font/woff2",
-        "fonts/archivo-400.woff2"
-    );
-    let r = file!(
-        r,
-        "/fonts/archivo-700.woff2",
-        "font/woff2",
-        "fonts/archivo-700.woff2"
-    );
-    let r = file!(
-        r,
-        "/fonts/archivo-800.woff2",
-        "font/woff2",
-        "fonts/archivo-800.woff2"
-    );
-    let r = file!(
-        r,
-        "/fonts/archivo-900.woff2",
-        "font/woff2",
-        "fonts/archivo-900.woff2"
-    );
-    let r = file!(
-        r,
-        "/fonts/spline-sans-mono-400.woff2",
-        "font/woff2",
-        "fonts/spline-sans-mono-400.woff2"
-    );
-    let r = file!(
-        r,
-        "/fonts/spline-sans-mono-600.woff2",
-        "font/woff2",
-        "fonts/spline-sans-mono-600.woff2"
-    );
+    let r = FONTS.iter().fold(r, |r, &(path, body)| {
+        r.route(
+            path,
+            get(move |request: Request| async move {
+                cached("font/woff2", body, request.uri().query())
+            }),
+        )
+    });
     let r = file!(r, "/favicon.svg", "image/svg+xml", "favicon.svg");
     let r = file!(r, "/icon.svg", "image/svg+xml", "icon.svg");
     let r = file!(r, "/icon-192.png", "image/png", "icon-192.png");
