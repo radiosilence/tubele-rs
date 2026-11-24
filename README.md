@@ -14,7 +14,7 @@ Mike's Tubele is a lovely game with one flaw: it believes everything your browse
 
 Here the schedule never leaves the server, the board and your record are rows in SQLite, and the browser is told the answer only after it has earned it. Search and clues are computed server-side, and so is every guess: the client sends what you typed, not which station you meant.
 
-It does this with less in the browser, too. The original is a React single-page app; this is HTML rendered in Rust, with Datastar (about 13 KB gzipped) patching it over SSE and one 3.5 KB script for the clipboard and the Stories card. Everything that made the original good, including its accessibility work (the ARIA combobox, the live region announcing every guess), came across unchanged, because it was good.
+It does this with less in the browser, too. The original is a React single-page app; this is HTML rendered in Rust, with Datastar (about 14 KB gzipped) patching it over SSE and one 3.5 KB script for the clipboard and the Stories card. Everything that made the original good, including its accessibility work (the ARIA combobox, the live region announcing every guess), came across unchanged, because it was good.
 
 You can still open a private window, lose on purpose and come back knowing the answer. Some problems are not software.
 
@@ -40,10 +40,10 @@ data/        The station graph, lines and packed answer schedule, from the origi
 src/engine   The graph, distances, the clue ladder, search and the schedule. Pure.
 src/game     A board and a player's record.
 src/store    SQLite through rusqlite; migrations counted by PRAGMA user_version.
-src/ui       Routes, SSE patches, assets and security headers.
+src/ui       Routes, SSE patches, assets and security headers. The Datastar glue and script are askama_datastar's.
 src/view     View models. The answer enters a view only through ResultView, which exists only for a finished board.
 templates/   askama templates.
-assets/      Datastar, app.js (sharing, the Stories card, list placement), fonts and icons, all embedded.
+assets/      app.js (sharing, the Stories card, list placement), fonts and icons, all embedded.
 deploy/      The Pulumi component, published as @radiosilence/tubele-pulumi.
 ```
 

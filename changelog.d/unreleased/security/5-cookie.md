@@ -1,0 +1,1 @@
+- **cookie 0.18.3.** RUSTSEC-2026-0594 found that private cookie nonces can repeat in a process that forks; the game's cookie is a plain one, so the advisory does not reach it, but the patched release clears the audit.

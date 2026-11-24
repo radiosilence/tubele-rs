@@ -3,16 +3,16 @@
 //! answer before the board that hides it is finished.
 
 use std::collections::HashSet;
-use std::convert::Infallible;
 use std::sync::{Arc, LazyLock};
 use std::time::Duration;
 
 use askama::Template;
+use askama_datastar::{PatchSignals, events};
 use axum::error_handling::HandleErrorLayer;
-use axum::extract::{Query, Request, State};
-use axum::http::{self, HeaderValue, StatusCode, header};
+use axum::extract::{Request, State};
+use axum::http::{HeaderValue, StatusCode, header};
 use axum::middleware::{self, Next};
-use axum::response::sse::{Event, Sse};
+use axum::response::sse::Event;
 use axum::response::{Html, IntoResponse, Response};
 use axum::routing::{get, post};
 use axum::{BoxError, Json, Router};
@@ -60,7 +60,9 @@ pub fn router(state: AppState) -> Router {
         .route("/assets/lines.css", get(lines_css))
         .merge(assets())
         .fallback(not_found)
-        .layer(middleware::from_fn(require_datastar_on_post))
+        .layer(middleware::from_fn(
+            askama_datastar::require_datastar_on_post,
+        ))
         .with_state(state);
     // The probe stays outside the perimeter: shed under load, it would take
     // the only replica out of the Service just when it is busiest.
@@ -165,20 +167,6 @@ struct Signals {
     active: usize,
     mode: Option<Mode>,
     puzzle: i64,
-}
-
-/// A GET carries the signals as JSON in the `datastar` query parameter.
-#[derive(Deserialize)]
-struct SignalsQuery {
-    datastar: Option<String>,
-}
-
-impl SignalsQuery {
-    fn parse(self) -> Signals {
-        self.datastar
-            .and_then(|s| serde_json::from_str(&s).ok())
-            .unwrap_or_default()
-    }
 }
 
 // ─── Board resolution ───
@@ -302,10 +290,9 @@ async fn page(State(state): State<AppState>, jar: CookieJar) -> Result<Response,
 async fn suggest(
     State(state): State<AppState>,
     jar: CookieJar,
-    Query(query): Query<SignalsQuery>,
+    askama_datastar::Signals(signals): askama_datastar::Signals<Signals>,
 ) -> Result<Response, AppError> {
     let (id, jar) = player(jar, state.secure());
-    let signals = query.parse();
     let network = state.network.clone();
     let today = now(&network).today;
     let (items, q) = state
@@ -326,14 +313,16 @@ async fn suggest(
 
     let count = items.len();
     let q = q.trim();
-    let html = SuggestionsTemplate {
+    let suggestions = askama_datastar::Html::render(&SuggestionsTemplate {
         no_match: (count == 0 && q.len() >= 2).then(|| q.to_owned()),
         items,
-    }
-    .render()?;
+    })?;
     Ok((
         jar,
-        many(vec![patch(&html), set_signals(&json!({ "_count": count }))]),
+        events([
+            suggestions.patch().into(),
+            set_signals(&json!({ "_count": count })),
+        ]),
     )
         .into_response())
 }
@@ -376,16 +365,15 @@ async fn guess(
         .await?;
 
     let Some((board, stats)) = outcome else {
-        return Ok((jar, many(vec![])).into_response());
+        return Ok((jar, events(Vec::new())).into_response());
     };
-    let html = GameTemplate {
+    let game = askama_datastar::Html::render(&GameTemplate {
         g: render_game(&state, &board, &stats, &now, true, true),
-    }
-    .render()?;
+    })?;
     Ok((
         jar,
-        many(vec![
-            patch(&html),
+        events([
+            game.patch().into(),
             set_signals(&json!({ "q": "", "active": 0, "_count": 0, "_open": false })),
         ]),
     )
@@ -436,7 +424,7 @@ async fn daily(State(state): State<AppState>, jar: CookieJar) -> Result<Response
         })
         .await?;
     let Some(board) = board else {
-        return Ok((jar, many(vec![])).into_response());
+        return Ok((jar, events(Vec::new())).into_response());
     };
     switch(&state, jar, &board, &stats, &now)
 }
@@ -448,16 +436,15 @@ fn switch(
     stats: &Stats,
     now: &Now,
 ) -> Result<Response, AppError> {
-    let html = GameTemplate {
+    let game = askama_datastar::Html::render(&GameTemplate {
         g: render_game(state, board, stats, now, false, true),
-    }
-    .render()?;
+    })?;
     let signals = set_signals(&json!({
         "q": "", "active": 0, "_count": 0, "_open": false,
         "mode": board.mode.as_str(), "puzzle": board.puzzle,
         "_next": now.at + now.ms_to_next,
     }));
-    Ok((jar, many(vec![patch(&html), signals])).into_response())
+    Ok((jar, events([game.patch().into(), signals])).into_response())
 }
 
 async fn seen(State(state): State<AppState>, jar: CookieJar) -> Result<Response, AppError> {
@@ -466,7 +453,7 @@ async fn seen(State(state): State<AppState>, jar: CookieJar) -> Result<Response,
         .db
         .run(move |c| Ok(store::mark_guide_seen(c, &id)?))
         .await?;
-    Ok((jar, many(vec![])).into_response())
+    Ok((jar, events(Vec::new())).into_response())
 }
 
 async fn robots(State(state): State<AppState>) -> impl IntoResponse {
@@ -503,38 +490,17 @@ async fn not_found() -> impl IntoResponse {
 
 // ─── SSE ───
 
-/// A bare `\r` would start an SSE data line outside the `elements` prefix.
-fn patch(html: &str) -> Event {
-    Event::default().event("datastar-patch-elements").data(
-        html.replace('\r', "")
-            .lines()
-            .map(|l| format!("elements {l}"))
-            .collect::<Vec<_>>()
-            .join("\n"),
-    )
-}
-
 fn set_signals(value: &serde_json::Value) -> Event {
-    Event::default()
-        .event("datastar-patch-signals")
-        .data(format!("signals {value}"))
-}
-
-fn many(events: Vec<Event>) -> Response {
-    Sse::new(futures_util::stream::iter(
-        events.into_iter().map(Ok::<_, Infallible>),
-    ))
-    .into_response()
+    PatchSignals::new(value.to_string()).into()
 }
 
 // ─── Assets ───
 
 const APP_CSS: &str = include_str!("../assets/app.css");
-const DATASTAR_JS: &str = include_str!("../assets/datastar.js");
 const APP_JS: &str = include_str!("../assets/app.js");
 
 static DATASTAR_URL: LazyLock<String> =
-    LazyLock::new(|| versioned("/assets/datastar.js", DATASTAR_JS.as_bytes()));
+    LazyLock::new(|| askama_datastar::script::url("/assets/datastar.js"));
 /// The fonts app.css names. They change only with a release, so the
 /// stylesheet is served naming each by its fingerprinted URL, which is cached
 /// for good; the bare URLs it was compiled with would be rechecked hourly.
@@ -660,16 +626,7 @@ fn assets() -> Router<AppState> {
                 )
             }),
         )
-        .route(
-            "/assets/datastar.js",
-            get(|request: Request| async move {
-                cached(
-                    "text/javascript; charset=utf-8",
-                    DATASTAR_JS,
-                    request.uri().query(),
-                )
-            }),
-        )
+        .route("/assets/datastar.js", get(askama_datastar::script::serve))
         .route(
             "/assets/app.js",
             get(|request: Request| async move {
@@ -732,16 +689,6 @@ async fn security_headers(request: Request, next: Next) -> Response {
     );
     h.insert(header::X_FRAME_OPTIONS, HeaderValue::from_static("DENY"));
     response
-}
-
-/// Every state change comes from Datastar, which sets a header a cross-site
-/// form cannot, so refusing POSTs without it stops request forgery.
-async fn require_datastar_on_post(request: Request, next: Next) -> Response {
-    if request.method() == http::Method::POST && !request.headers().contains_key("datastar-request")
-    {
-        return StatusCode::FORBIDDEN.into_response();
-    }
-    next.run(request).await
 }
 
 pub struct AppError(anyhow::Error);
