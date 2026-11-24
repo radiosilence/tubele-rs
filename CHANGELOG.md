@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.3
+
+### Changed
+
+- **askama_datastar 0.1.2.** Fragment answers sent as `Html` vary on `Datastar-Request`, so a browser's cache keeps them apart from the page at the same address.
+
 ## 0.1.2
 
 ### Security
