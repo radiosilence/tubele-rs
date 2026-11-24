@@ -53,9 +53,9 @@ dependencies = [
 
 [[package]]
 name = "askama_datastar"
-version = "0.1.0"
+version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2e5cd2f874d2d2450e68be63cd87a3ede3b67454adf6e39c326a63c23611ecde"
+checksum = "852e25d491015f5ec6db7498821a675e753ac29e3724ba01d6a8406400e03ca0"
 dependencies = [
  "askama",
  "axum",
