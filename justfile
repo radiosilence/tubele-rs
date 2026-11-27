@@ -4,11 +4,13 @@
 dev:
     cargo run
 
-# What CI checks, short of the audit and the release builds.
+# What CI checks, short of the audit and the release builds. Format covers the
+# Rust and the templates.
 check:
     actionlint
     git diff --quiet Cargo.lock || { echo 'Cargo.lock has uncommitted changes'; exit 1; }
     cargo fmt --all -- --check
+    askama-analyzer fmt --check
     cargo clippy --all-targets --locked -- -D warnings
     cargo test --locked
     cd deploy/pulumi && npm run -s check && npm run -s build
@@ -21,6 +23,7 @@ check:
 fast:
     git diff --quiet Cargo.lock || { echo 'Cargo.lock has uncommitted changes'; exit 1; }
     cargo fmt --all -- --check
+    askama-analyzer fmt --check
 
 # Compile the stylesheet from styles/. The output is committed because the
 # server embeds it; CI fails a build where it is stale.
@@ -48,8 +51,10 @@ versions:
         exit 1
     fi
 
+# Format the Rust and the templates
 fmt:
     cargo fmt --all
+    askama-analyzer fmt
 
 # Install the git hooks
 hooks:
